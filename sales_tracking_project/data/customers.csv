@@ -1,0 +1,101 @@
+customer_id,customer_name,email,city,country
+C001,Carlos Novak,carlos.novak@gmail.com,Cairo,Egypt
+C002,John Johnson,john.johnson@gmail.com,Prague,Czech Republic
+C003,Nguyen Smith,nguyen.smith@gmail.com,Toronto,Canada
+C004,Tom Ahmed,tom.ahmed@gmail.com,Melbourne,Australia
+C005,Fatima Khan,fatima.khan@gmail.com,Seoul,South Korea
+C006,Lucas Rossi,lucas.rossi@gmail.com,Berlin,Germany
+C007,Nguyen Patel,nguyen.patel@gmail.com,Mexico City,Mexico
+C008,John Rossi,john.rossi@gmail.com,Mexico City,Mexico
+C009,Lisa Khan,lisa.khan@gmail.com,Berlin,Germany
+C010,Emma Johnson,emma.johnson@gmail.com,Toronto,Canada
+C011,Anna Van An,anna.van an@gmail.com,Prague,Czech Republic
+C012,Anna Dupont,anna.dupont@gmail.com,Paris,France
+C013,Aisha White,aisha.white@gmail.com,São Paulo,Brazil
+C014,Fatima Lin,fatima.lin@gmail.com,London,UK
+C015,Carlos Patel,carlos.patel@gmail.com,Chicago,USA
+C016,Mei Kowalska,mei.kowalska@gmail.com,Rome,Italy
+C017,Ana White,ana.white@gmail.com,Chicago,USA
+C018,Peter Dupont,peter.dupont@gmail.com,Warsaw,Poland
+C019,Peter Smith,peter.smith@gmail.com,London,UK
+C020,Isabella Dupont,isabella.dupont@gmail.com,Karachi,Pakistan
+C021,Chloe Oliveira,chloe.oliveira@gmail.com,Dubai,UAE
+C022,Nguyen Müller,nguyen.müller@gmail.com,Berlin,Germany
+C023,Ana Müller,ana.müller@gmail.com,Seoul,South Korea
+C024,John Oliveira,john.oliveira@gmail.com,Chicago,USA
+C025,David White,david.white@gmail.com,Mumbai,India
+C026,Oliver Dupont,oliver.dupont@gmail.com,Prague,Czech Republic
+C027,Anna Dupont,anna.dupont@gmail.com,Rome,Italy
+C028,Chloe Martinez,chloe.martinez@gmail.com,Melbourne,Australia
+C029,Mei Khan,mei.khan@gmail.com,Prague,Czech Republic
+C030,Lucas Smith,lucas.smith@gmail.com,Hanoi,Vietnam
+C031,Sarah Kowalska,sarah.kowalska@gmail.com,Warsaw,Poland
+C032,Chloe Khan,chloe.khan@gmail.com,New York,USA
+C033,Fatima Wilson,fatima.wilson@gmail.com,Warsaw,Poland
+C034,Emma Khan,emma.khan@gmail.com,Warsaw,Poland
+C035,Chloe Martinez,chloe.martinez@gmail.com,Toronto,Canada
+C036,John Johansson,john.johansson@gmail.com,Chicago,USA
+C037,Sarah Müller,sarah.müller@gmail.com,Stockholm,Sweden
+C038,Peter Johansson,peter.johansson@gmail.com,Prague,Czech Republic
+C039,Lucas Van An,lucas.van an@gmail.com,Dubai,UAE
+C040,Oliver White,oliver.white@gmail.com,Seoul,South Korea
+C041,Mei Hassan,mei.hassan@gmail.com,New York,USA
+C042,Lucas Oliveira,lucas.oliveira@gmail.com,Mexico City,Mexico
+C043,John Johnson,john.johnson@gmail.com,Stockholm,Sweden
+C044,Carlos White,carlos.white@gmail.com,Chicago,USA
+C045,Emma White,emma.white@gmail.com,Paris,France
+C046,Ahmed Hassan,ahmed.hassan@gmail.com,Warsaw,Poland
+C047,Ahmed Hassan,ahmed.hassan@gmail.com,Hanoi,Vietnam
+C048,Isabella Rossi,isabella.rossi@gmail.com,Cairo,Egypt
+C049,Nguyen Patel,nguyen.patel@gmail.com,Hanoi,Vietnam
+C050,Aisha Brown,aisha.brown@gmail.com,Karachi,Pakistan
+C051,Lisa Kowalska,lisa.kowalska@gmail.com,Rome,Italy
+C052,Emma Martinez,emma.martinez@gmail.com,Paris,France
+C053,Fatima Oliveira,fatima.oliveira@gmail.com,Seoul,South Korea
+C054,Lisa Kowalska,lisa.kowalska@gmail.com,Warsaw,Poland
+C055,John Dupont,john.dupont@gmail.com,Chicago,USA
+C056,Peter Dupont,peter.dupont@gmail.com,Mexico City,Mexico
+C057,Ana Martinez,ana.martinez@gmail.com,Mexico City,Mexico
+C058,Sarah Lin,sarah.lin@gmail.com,Rome,Italy
+C059,Oliver Dupont,oliver.dupont@gmail.com,Warsaw,Poland
+C060,Lisa Ahmed,lisa.ahmed@gmail.com,Chicago,USA
+C061,Lucas Kowalska,lucas.kowalska@gmail.com,Hanoi,Vietnam
+C062,Sarah Rossi,sarah.rossi@gmail.com,Stockholm,Sweden
+C063,Lisa Kowalska,lisa.kowalska@gmail.com,Mumbai,India
+C064,Mei Wilson,mei.wilson@gmail.com,Prague,Czech Republic
+C065,Aisha Patel,aisha.patel@gmail.com,Paris,France
+C066,Anna Rossi,anna.rossi@gmail.com,Stockholm,Sweden
+C067,Peter Müller,peter.müller@gmail.com,Dubai,UAE
+C068,John Novak,john.novak@gmail.com,Rome,Italy
+C069,Nguyen Oliveira,nguyen.oliveira@gmail.com,Cairo,Egypt
+C070,Peter Lin,peter.lin@gmail.com,Mumbai,India
+C071,Ahmed Müller,ahmed.müller@gmail.com,Cairo,Egypt
+C072,Anna Kowalska,anna.kowalska@gmail.com,Melbourne,Australia
+C073,Lisa Kim,lisa.kim@gmail.com,Rome,Italy
+C074,Ahmed Dupont,ahmed.dupont@gmail.com,Warsaw,Poland
+C075,Ana Van An,ana.van an@gmail.com,Stockholm,Sweden
+C076,Nguyen Kim,nguyen.kim@gmail.com,Toronto,Canada
+C077,Raj Johansson,raj.johansson@gmail.com,Shanghai,China
+C078,Peter Dupont,peter.dupont@gmail.com,Mumbai,India
+C079,Ana Brown,ana.brown@gmail.com,Berlin,Germany
+C080,Chloe Martinez,chloe.martinez@gmail.com,Paris,France
+C081,Carlos Kowalska,carlos.kowalska@gmail.com,Warsaw,Poland
+C082,Raj Smith,raj.smith@gmail.com,Karachi,Pakistan
+C083,Lisa Johansson,lisa.johansson@gmail.com,Shanghai,China
+C084,Mei Van An,mei.van an@gmail.com,Prague,Czech Republic
+C085,Fatima Smith,fatima.smith@gmail.com,London,UK
+C086,Raj Johansson,raj.johansson@gmail.com,Cairo,Egypt
+C087,John Patel,john.patel@gmail.com,Chicago,USA
+C088,Emma Hassan,emma.hassan@gmail.com,Melbourne,Australia
+C089,Ana Kim,ana.kim@gmail.com,Cairo,Egypt
+C090,Ahmed Kowalska,ahmed.kowalska@gmail.com,Cairo,Egypt
+C091,Anna Lin,anna.lin@gmail.com,Melbourne,Australia
+C092,John Johnson,john.johnson@gmail.com,Stockholm,Sweden
+C093,Ana Johnson,ana.johnson@gmail.com,London,UK
+C094,Oliver Dupont,oliver.dupont@gmail.com,London,UK
+C095,Isabella White,isabella.white@gmail.com,Berlin,Germany
+C096,Raj Ahmed,raj.ahmed@gmail.com,Shanghai,China
+C097,Emma Martinez,emma.martinez@gmail.com,Warsaw,Poland
+C098,Mei Ahmed,mei.ahmed@gmail.com,São Paulo,Brazil
+C099,Emma Johansson,emma.johansson@gmail.com,Karachi,Pakistan
+C100,Fatima Wilson,fatima.wilson@gmail.com,Cairo,Egypt
