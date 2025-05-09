@@ -13,5 +13,5 @@ This project simulates a simple sales database using PostgreSQL. It includes thr
 
 ### Tools Used
 - Excel
-- PostgreSQL (for SQL work)
-- Git & GitHub (for version control)
+- PostgreSQL
+- Git & GitHub
