@@ -20,6 +20,6 @@ product_id INT,
 sale_date DATE,
 quantity INT,
 total_amount DECIMAL(10,2),
-FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
 FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
