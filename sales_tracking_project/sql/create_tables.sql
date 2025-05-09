@@ -15,8 +15,8 @@ price DECIMAL(10, 2)
 
 CREATE TABLE sales(
 sale_id VARCHAR PRIMARY KEY,
-customer_id INT,
-product_id INT,
+customer_id VARCHAR,
+product_id VARCHAR,
 sale_date DATE,
 quantity INT,
 total_amount DECIMAL(10,2),
