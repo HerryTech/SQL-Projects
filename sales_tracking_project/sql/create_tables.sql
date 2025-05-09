@@ -1,14 +1,14 @@
 CREATE TABLE customers(
 customer_id VARCHAR PRIMARY KEY,
-customer_name VARCHAR(100) NOT NULL,
-email VARCHAR(100) UNIQUE,
+customer_name VARCHAR(100),
+email VARCHAR(100),
 city VARCHAR(50),
 country VARCHAR(50)
 );
 
 CREATE TABLE products(
 product_id VARCHAR PRIMARY KEY,
-product_name VARCHAR(100) NOT NULL,
+product_name VARCHAR(100),
 category VARCHAR(50),
 price DECIMAL(10, 2)
 );

@@ -1,0 +1,101 @@
+product_id,product_name,category,price
+P001,Desk Lamp,Furniture,978.91
+P002,Desk Lamp,Furniture,776.32
+P003,Desk Lamp,Furniture,70.52
+P004,Notebook,Office Supplies,337.33
+P005,Projector,Technology,651.96
+P006,Office Chair,Furniture,239.26
+P007,Tablet,Technology,944.72
+P008,Smartphone,Technology,725.64
+P009,Webcam,Technology,18
+P010,Desk Lamp,Furniture,401.8
+P011,Stapler,Office Supplies,532.6
+P012,Gaming Keyboard,Technology,719.93
+P013,Gaming Keyboard,Technology,956.96
+P014,Office Chair,Furniture,671.84
+P015,Pen Set,Office Supplies,489.58
+P016,Bluetooth Speaker,Technology,238.19
+P017,Pen Set,Office Supplies,147.89
+P018,Whiteboard,Office Supplies,269.36
+P019,Webcam,Technology,942.43
+P020,Webcam,Technology,132.84
+P021,Office Chair,Furniture,139.64
+P022,Gaming Keyboard,Technology,719.12
+P023,Smartphone,Technology,913.72
+P024,Printer,Technology,757.62
+P025,Stapler,Office Supplies,349.08
+P026,Wireless Mouse,Technology,574.29
+P027,Desk Lamp,Furniture,541.36
+P028,Whiteboard,Office Supplies,644.82
+P029,Printer,Technology,476.61
+P030,External Hard Drive,Technology,122.17
+P031,Printer,Technology,658.67
+P032,Tablet,Technology,322.41
+P033,Pen Set,Office Supplies,291.28
+P034,Bluetooth Speaker,Technology,880.49
+P035,Projector,Technology,607.37
+P036,Shredder,Technology,199.2
+P037,Printer,Technology,987.87
+P038,Pen Set,Office Supplies,98.94
+P039,Wireless Mouse,Technology,670.82
+P040,Shredder,Technology,310.72
+P041,Gaming Keyboard,Technology,919.06
+P042,USB-C Hub,Technology,256.97
+P043,Office Chair,Furniture,566.19
+P044,Pen Set,Office Supplies,691.26
+P045,External Hard Drive,Technology,119.56
+P046,Shredder,Technology,370.9
+P047,Desk Lamp,Furniture,194.71
+P048,Gaming Keyboard,Technology,997.86
+P049,HD Monitor,Technology,374.87
+P050,External Hard Drive,Technology,510.19
+P051,External Hard Drive,Technology,692.51
+P052,Smartphone,Technology,482.55
+P053,Tablet,Technology,532.31
+P054,Whiteboard,Office Supplies,696.41
+P055,USB-C Hub,Technology,930.23
+P056,Wireless Mouse,Technology,602.94
+P057,Scanner,Technology,534.68
+P058,Desk Lamp,Furniture,159.22
+P059,Office Chair,Furniture,597.98
+P060,Wireless Mouse,Technology,714.53
+P061,Webcam,Technology,612.2
+P062,Smartphone,Technology,850.51
+P063,Smartphone,Technology,132.91
+P064,Smartphone,Technology,713.94
+P065,Smartphone,Technology,691.95
+P066,Laptop Stand,Furniture,491.73
+P067,Shredder,Technology,620.67
+P068,Whiteboard,Office Supplies,38.21
+P069,Laptop Stand,Furniture,996.98
+P070,Notebook,Office Supplies,405.64
+P071,USB-C Hub,Technology,953.95
+P072,Tablet,Technology,217.92
+P073,Wireless Mouse,Technology,738.51
+P074,Laptop Stand,Furniture,897.52
+P075,Bluetooth Speaker,Technology,988.3
+P076,Smartphone,Technology,551.53
+P077,Shredder,Technology,293.18
+P078,USB-C Hub,Technology,934.39
+P079,Bluetooth Speaker,Technology,13.45
+P080,Smartphone,Technology,528.84
+P081,Stapler,Office Supplies,518.56
+P082,Notebook,Office Supplies,243.04
+P083,Whiteboard,Office Supplies,874.38
+P084,Printer,Technology,306.89
+P085,Pen Set,Office Supplies,174.64
+P086,Smartphone,Technology,690.48
+P087,Scanner,Technology,855.94
+P088,Webcam,Technology,965.32
+P089,Office Chair,Furniture,585.86
+P090,Office Chair,Furniture,791.59
+P091,Notebook,Office Supplies,973.84
+P092,Shredder,Technology,927.51
+P093,Notebook,Office Supplies,193.83
+P094,Notebook,Office Supplies,402.5
+P095,Tablet,Technology,390.68
+P096,USB-C Hub,Technology,279.79
+P097,Office Chair,Furniture,940.32
+P098,Pen Set,Office Supplies,673.03
+P099,Whiteboard,Office Supplies,228.3
+P100,USB-C Hub,Technology,864.86
