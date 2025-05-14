@@ -24,7 +24,15 @@ SELECT c.customer_name, SUM (s.total_amount) AS total_spent
 FROM sales s
 JOIN customers c ON c.customer_id = s.customer_id
 GROUP BY c.customer_name
-ORDER BY total_spent DESC;
+ORDER BY total_spent DESC
+LIMIT 5;
+
+-- Top 5 best selling product by revenue
+SELECT p.product_name, SUM(s.total_amount) AS product_sales
+FROM sales s
+JOIN products p ON p.product_id = s.product_id
+GROUP BY p.product_name
+ORDER BY product_sales DESC
 LIMIT 5;
 
 
