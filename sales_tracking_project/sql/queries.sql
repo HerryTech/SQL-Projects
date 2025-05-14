@@ -7,3 +7,5 @@ FROM sales s
 JOIN customers c ON c.customer_id = s.customer_id
 GROUP BY c.customer_name;
 
+-- This query calculates the total sales for each product
+SELECT p.product
