@@ -5,4 +5,5 @@ SELECT SUM(total_amount) AS total_sales FROM sales;
 SELECT c.customer_name, SUM (s.total_amount) AS total_spent
 FROM sales s
 JOIN customers c ON c.customer_id = s.customer_id
+GROUP BY c.customer_name;
 
