@@ -37,17 +37,19 @@ LIMIT 5;
 
 -- Sales by month
 SELECT TO_CHAR(sale_date, 'YYYY-MM') AS month, 
-SUM(total_amount) as monthly_sales
+SUM(total_amount) AS monthly_sales
 FROM sales s
 GROUP BY month
 ORDER BY month;
 
 --Customer purchase frequency
-SELECT c.customer_name, COUNT(s.sale_id) as purchase_count
+SELECT c.customer_name, COUNT(s.sale_id) AS purchase_count
 FROM sales s
 JOIN customers c ON c.customer_id = s.customer_id
 GROUP BY customer_name
 ORDER BY purchase_count DESC;
 
 -- Average Order Value (AOV)
+SELECT ROUND(AVG(total_amount), 2) AS avg_order_value
+FROM sales;
 
