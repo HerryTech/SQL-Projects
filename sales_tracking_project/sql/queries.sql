@@ -42,5 +42,12 @@ FROM sales s
 GROUP BY month
 ORDER BY month;
 
+--Customer purchase frequency
+SELECT c.customer_name, COUNT(s.sale_id) as purchase_count
+FROM sales s
+JOIN customer_name c ON c.customer_id = s.customer_id
+GROUP BY customer_name
+ORDER BY purchase_count DESC;
+
 
 
