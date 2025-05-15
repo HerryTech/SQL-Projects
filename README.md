@@ -1,4 +1,4 @@
-﻿# SQL-Projects
+﻿# SQL Projects
 
 This repository is a growing collection of SQL-based projects that demonstrate my skills in data analysis, data modeling, query optimization, and business intelligence reporting.
 
