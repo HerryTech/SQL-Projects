@@ -49,5 +49,5 @@ JOIN customers c ON c.customer_id = s.customer_id
 GROUP BY customer_name
 ORDER BY purchase_count DESC;
 
-
+-- Average Order Value (AOV)
 
