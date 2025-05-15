@@ -9,7 +9,7 @@ This project simulates a simple sales database using PostgreSQL. It includes thr
 - Total sales
 - Sales by customer
 - Sales by product
-- Total quantity sold
+- Total quantity sold e.t.c
 
 ### Tools Used
 - Excel
