@@ -4,9 +4,9 @@ This repository is a growing collection of SQL-based projects that demonstrate m
 
 ## 🏆 Projects
 
-### 1. 🔍 **Sales Tracking **
+### 1. 🔍 **Sales Tracking**
 
-This project uses SQL to analyze sales data and extract key business insights. It covers customer purchasing trends, top-performing products, monthly sales patterns, and regional performance. The goal is to support data-driven decision-making across marketing, inventory, and sales operations.
+This project uses SQL to analyze sales data and extract key business insights. It covers customer purchasing trends, top-performing products, and monthly sales patterns. The goal is to support data-driven decision-making across marketing, inventory, and sales operations.
 
 **Folder:** [sales_tracking_project](./sales_tracking_project)
 
