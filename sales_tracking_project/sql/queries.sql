@@ -36,7 +36,7 @@ ORDER BY product_sales DESC
 LIMIT 5;
 
 -- Sales by month
-SELECT TO_CHAR(sale_date, "YYYY-MM") AS month, 
+SELECT TO_CHAR(sale_date, 'YYYY-MM') AS month, 
 SUM(total_amount) as monthly_sales
 FROM sales s
 GROUP BY month
