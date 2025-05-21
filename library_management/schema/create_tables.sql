@@ -3,7 +3,7 @@ book_id VARCHAR PRIMARY KEY,
 title VARCHAR(100),
 author VARCHAR(100), 
 genre VARCHAR(50),
-publish_year DATE
+publish_year INT
 );
 
 CREATE TABLE borrowers(
