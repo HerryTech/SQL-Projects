@@ -11,7 +11,7 @@ This project uses SQL to analyze sales data and extract key business insights. I
 **Folder:** [sales_tracking_project](./sales_tracking_project)
 
 ### 2. 🔍 **Library Management**
-
+This project stimulates a library system using SQL. Tracks books, borrowers, issue dates, and return dates. Demonstrates joins, filtering, aggregations, and tracking borrow history.
 
 **Folder:** [library_management](./library_management)
 
