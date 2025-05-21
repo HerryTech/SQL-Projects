@@ -1,4 +1,4 @@
-borrower_id,Name,Email,Join_Date
+﻿borrower_id,Name,Email,Join_Date
 C001,Alice Johnson,alice.johnson@gmail.com,1/15/2022
 C002,Bob Smith,bob.smith@gmail.com,11/30/2021
 C003,Carol Martinez,carol.martinez@gmail.com,2/10/2023

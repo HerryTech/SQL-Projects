@@ -1,4 +1,4 @@
-issue_id,book_id,borrower_id,issue_date,return_date
+﻿issue_id,book_id,borrower_id,issue_date,return_date
 I001,B015,C095,5/17/2023,7/1/2023
 I002,B004,C034,10/26/2023,12/14/2023
 I003,B029,C046,10/6/2021,11/25/2021
