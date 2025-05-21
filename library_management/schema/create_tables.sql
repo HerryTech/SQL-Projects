@@ -18,8 +18,8 @@ issue_id VARCHAR PRIMARY KEY,
 book_id	VARCHAR,
 borrower_id	VARCHAR,
 issue_date DATE,
-return_date DATE
-FOREIGN KEY (book_id) REFERENCES books(book_id)
-
+return_date DATE,
+FOREIGN KEY (book_id) REFERENCES books(book_id),
+FOREIGN KEY (borrower_id) REFERENCES borrowers(borrower_id)
 );
 
