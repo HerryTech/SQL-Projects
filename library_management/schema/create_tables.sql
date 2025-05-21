@@ -5,3 +5,7 @@ author VARCHAR(100),
 genre VARCHAR(50),
 publish_year DATE
 );
+
+CREATE TABLE borrowers(
+
+);
