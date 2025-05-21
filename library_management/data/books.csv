@@ -1,0 +1,101 @@
+book_id,title,author,genre,publish_year
+B001,To Kill a Mockingbird,Harper Lee,Fiction,1960
+B002,1984,George Orwell,Dystopian,1949
+B003,The Great Gatsby,F. Scott Fitzgerald,Classic,1925
+B004,The Catcher in the Rye,J.D. Salinger,Fiction,1951
+B005,Pride and Prejudice,Jane Austen,Romance,1813
+B006,The Hobbit,J.R.R. Tolkien,Fantasy,1937
+B007,Fahrenheit 451,Ray Bradbury,Science Fiction,1953
+B008,The Book Thief,Markus Zusak,Historical Fiction,2005
+B009,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",C.S. Lewis,Fantasy,1950
+B010,Moby-Dick,Herman Melville,Adventure,1851
+B011,Jane Eyre,Charlotte Brontë,Gothic Fiction,1847
+B012,The Alchemist,Paulo Coelho,Philosophy,1988
+B013,The Da Vinci Code,Dan Brown,Thriller,2003
+B014,War and Peace,Leo Tolstoy,Historical Fiction,1869
+B015,Anna Karenina,Leo Tolstoy,Tragedy,1877
+B016,The Divine Comedy,Dante Alighieri,Epic Poetry,1320
+B017,The Kite Runner,Khaled Hosseini,Historical Fiction,2003
+B018,A Tale of Two Cities,Charles Dickens,Historical Fiction,1859
+B019,Slaughterhouse-Five,Kurt Vonnegut,Science Fiction,1969
+B020,One Hundred Years of Solitude,Gabriel García Márquez,Magical Realism,1967
+B021,The Picture of Dorian Gray,Oscar Wilde,Gothic Fiction,1890
+B022,Dracula,Bram Stoker,Horror,1897
+B023,The Shining,Stephen King,Horror,1977
+B024,Wuthering Heights,Emily Brontë,Gothic Fiction,1847
+B025,The Handmaid's Tale,Margaret Atwood,Dystopian,1985
+B026,The Outsiders,S.E. Hinton,Young Adult,1967
+B027,Animal Farm,George Orwell,Political Satire,1945
+B028,The Giver,Lois Lowry,Dystopian,1993
+B029,Catch-22,Joseph Heller,Satire,1961
+B030,The Color Purple,Alice Walker,Historical Fiction,1982
+B031,Les Misérables,Victor Hugo,Historical Fiction,1862
+B032,Ender’s Game,Orson Scott Card,Science Fiction,1985
+B033,The Bell Jar,Sylvia Plath,Semi-autobiographical,1963
+B034,Lord of the Flies,William Golding,Allegorical,1954
+B035,The Secret Garden,Frances Hodgson Burnett,Children’s Lit,1911
+B036,The Count of Monte Cristo,Alexandre Dumas,Adventure,1844
+B037,Frankenstein,Mary Shelley,Gothic Fiction,1818
+B038,The Little Prince,Antoine de Saint-Exupéry,Children’s Lit,1943
+B039,The Brothers Karamazov,Fyodor Dostoevsky,Philosophical,1880
+B040,The Road,Cormac McCarthy,Post-apocalyptic,2006
+B041,The Night Circus,Erin Morgenstern,Fantasy,2011
+B042,The Hunger Games,Suzanne Collins,Dystopian,2008
+B043,The Help,Kathryn Stockett,Historical Fiction,2009
+B044,Gone Girl,Gillian Flynn,Thriller,2012
+B045,The Fault in Our Stars,John Green,Young Adult,2012
+B046,American Gods,Neil Gaiman,Fantasy,2001
+B047,The Girl with the Dragon Tattoo,Stieg Larsson,Mystery,2005
+B048,Life of Pi,Yann Martel,Adventure,2001
+B049,Twilight,Stephenie Meyer,Fantasy,2005
+B050,Divergent,Veronica Roth,Dystopian,2011
+B051,The Maze Runner,James Dashner,Science Fiction,2009
+B052,The Martian,Andy Weir,Science Fiction,2011
+B053,Ready Player One,Ernest Cline,Science Fiction,2011
+B054,Never Let Me Go,Kazuo Ishiguro,Science Fiction,2005
+B055,The Lovely Bones,Alice Sebold,Thriller,2002
+B056,Cloud Atlas,David Mitchell,Science Fiction,2004
+B057,The Road to Character,David Brooks,Non-fiction,2015
+B058,Room,Emma Donoghue,Thriller,2010
+B059,The Time Traveler’s Wife,Audrey Niffenegger,Romance,2003
+B060,Station Eleven,Emily St. John Mandel,Post-apocalyptic,2014
+B061,The Goldfinch,Donna Tartt,Literary Fiction,2013
+B062,Big Little Lies,Liane Moriarty,Mystery,2014
+B063,Me Before You,Jojo Moyes,Romance,2012
+B064,The Nightingale,Kristin Hannah,Historical Fiction,2015
+B065,An Ember in the Ashes,Sabaa Tahir,Fantasy,2015
+B066,The Girl on the Train,Paula Hawkins,Thriller,2015
+B067,Circe,Madeline Miller,Fantasy,2018
+B068,Where the Crawdads Sing,Delia Owens,Mystery,2018
+B069,The Secret History,Donna Tartt,Thriller,1992
+B070,Snow Falling on Cedars,David Guterson,Historical Fiction,1994
+B071,The Green Mile,Stephen King,Fantasy/Drama,1996
+B072,Memoirs of a Geisha,Arthur Golden,Historical Fiction,1997
+B073,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Fantasy,1997
+B074,The Perks of Being a Wallflower,Stephen Chbosky,Young Adult,1999
+B075,The Poisonwood Bible,Barbara Kingsolver,Historical Fiction,1998
+B076,White Teeth,Zadie Smith,Literary Fiction,2000
+B077,The Corrections,Jonathan Franzen,Literary Fiction,2001
+B078,Middlesex,Jeffrey Eugenides,Literary Fiction,2002
+B079,Atonement,Ian McEwan,Historical Fiction,2001
+B080,The Blind Assassin,Margaret Atwood,Literary Fiction,2000
+B081,Shantaram,Gregory David Roberts,Thriller,2003
+B082,The Shadow of the Wind,Carlos Ruiz Zafón,Mystery,2001
+B083,The Hours,Michael Cunningham,Literary Fiction,1998
+B084,Fight Club,Chuck Palahniuk,Fiction,1996
+B085,Jurassic Park,Michael Crichton,Science Fiction,1990
+B086,Angela’s Ashes,Frank McCourt,Memoir,1996
+B087,Coraline,Neil Gaiman,Fantasy,2002
+B088,The Tipping Point,Malcolm Gladwell,Non-fiction,2000
+B089,The Wind-Up Bird Chronicle,Haruki Murakami,Magical Realism,1994
+B090,The Secret Life of Bees,Sue Monk Kidd,Historical Fiction,2001
+B091,A Game of Thrones,George R. R. Martin,Fantasy,1996
+B092,Perfume: The Story of a Murderer,Patrick Süskind,Historical Fiction,1985
+B093,The God of Small Things,Arundhati Roy,Literary Fiction,1997
+B094,Possession,A.S. Byatt,Literary Fiction,1990
+B095,Cryptonomicon,Neal Stephenson,Science Fiction,1999
+B096,Blood Meridian,Cormac McCarthy,Western Fiction,1985
+B097,The Amazing Adventures of Kavalier & Clay,Michael Chabon,Historical Fiction,2000
+B098,Snow Crash,Neal Stephenson,Science Fiction,1992
+B099,Neverwhere,Neil Gaiman,Urban Fantasy,1996
+B100,The Name of the Rose,Umberto Eco,Historical Mystery,1980
