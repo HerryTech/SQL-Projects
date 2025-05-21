@@ -1,12 +1,10 @@
 # Library Management System (SQL Project)
 
-This project tracks books, borrowers, and book transactions using SQL.
+This project simulates a simple Library Management System using PostgreSQL. It includes three core tables:
+- `books`: details about the books in the library
+- `borrowers`: information about library members
+- `issue_records`: records of issued and returned books
 
-## Features
-- List borrowed/available books
-- Borrower history
-- Book availability
-- Power BI dashboard
 
 ## Tools Used
 - Excel
