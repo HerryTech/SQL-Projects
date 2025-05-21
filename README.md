@@ -10,4 +10,9 @@ This project uses SQL to analyze sales data and extract key business insights. I
 
 **Folder:** [sales_tracking_project](./sales_tracking_project)
 
+### 2. 🔍 **Library Management**
+
+
+**Folder:** [library_management](./library_management)
+
 _More projects will be added soon!_
