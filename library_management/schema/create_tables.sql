@@ -15,8 +15,8 @@ Join_date DATE
 
 CREATE TABLE issue_records(
 issue_id VARCHAR PRIMARY KEY,
-book_id	
-borrower_id	
-issue_date	
-return_date
+book_id	VARCHAR,
+borrower_id	VARCHAR,
+issue_date DATE
+return_date DATE
 );
