@@ -17,6 +17,9 @@ CREATE TABLE issue_records(
 issue_id VARCHAR PRIMARY KEY,
 book_id	VARCHAR,
 borrower_id	VARCHAR,
-issue_date DATE
+issue_date DATE,
 return_date DATE
+FOREIGN KEY (book_id) REFERENCES books(book_id)
+
 );
+
