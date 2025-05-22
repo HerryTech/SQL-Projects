@@ -1,1 +1,1 @@
-CREATE
+SELECT * FROM books;
