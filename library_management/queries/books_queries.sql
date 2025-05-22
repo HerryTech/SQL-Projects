@@ -2,5 +2,6 @@
 SELECT * FROM books;
 
 --Count of books by genre
-SELECT COUNT(genre) AS books_genre FROM books
+SELECT genre COUNT(genre) AS books_genre 
+FROM books
 GROUP BY genre;
