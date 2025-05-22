@@ -5,3 +5,5 @@ SELECT * FROM books;
 SELECT genre, COUNT(genre) AS books_genre 
 FROM books
 GROUP BY genre;
+
+--Books published before a certain year
