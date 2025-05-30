@@ -15,4 +15,4 @@ This project stimulates a library system using SQL. Tracks books, borrowers, iss
 
 **Folder:** [library_management](./library_management)
 
-_More projects will be added soon!_...
+_More projects will be added soon!_
