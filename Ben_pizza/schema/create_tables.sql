@@ -6,7 +6,7 @@
 CREATE TABLE "Order" (
     "row_id" int   NOT NULL,
     "order_id" int   NOT NULL,
-    "created_at" datetime   NOT NULL,
+    "created_at" timestamp   NOT NULL,
     "item_id" int   NOT NULL,
     "cust_id" int   NOT NULL,
     "add_id" int   NOT NULL,
@@ -89,8 +89,8 @@ CREATE TABLE "staff" (
 CREATE TABLE "shift" (
     "shift_id" varchar(10)   NOT NULL,
     "day_of_week" varchar(20)   NOT NULL,
-    "start_time" datetime   NOT NULL,
-    "end_time" datetime   NOT NULL,
+    "start_time" timestamp   NOT NULL,
+    "end_time" timestamp   NOT NULL,
     CONSTRAINT "pk_shift" PRIMARY KEY (
         "shift_id"
      )
@@ -99,7 +99,7 @@ CREATE TABLE "shift" (
 CREATE TABLE "roster" (
     "row_id" int   NOT NULL,
     "rota_id" varchar(10)   NOT NULL,
-    "date" datetime   NOT NULL,
+    "date" date NOT NULL,
     "shift_id" varchar(10)   NOT NULL,
     "staff_id" varchar(10)   NOT NULL,
     CONSTRAINT "pk_roster" PRIMARY KEY (
