@@ -66,7 +66,10 @@ CREATE TABLE "recipe" (
     "quantity" int   NOT NULL,
     CONSTRAINT "pk_recipe" PRIMARY KEY (
         "row_id"
-     )
+     ),
+    CONSTRAINT "uc_recipe_recipe_id" UNIQUE (
+        "recipe_id"
+    )
 );
 
 CREATE TABLE "inventory" (
