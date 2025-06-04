@@ -7,7 +7,7 @@ CREATE TABLE "Order" (
     "row_id" int   NOT NULL,
     "order_id" int   NOT NULL,
     "created_at" timestamp   NOT NULL,
-    "item_id" int   NOT NULL,
+    "item_id" varchar(10)   NOT NULL,
     "cust_id" int   NOT NULL,
     "add_id" int   NOT NULL,
     CONSTRAINT "pk_Order" PRIMARY KEY (
@@ -30,7 +30,10 @@ CREATE TABLE "address" (
     "delivery_address1" varchar(200)   NOT NULL,
     "delivery_address2" varchar(200)   NULL,
     "delivery_city" varchar(20)   NOT NULL,
-    "delivery_zipcode" int   NOT NULL
+    "delivery_zipcode" int   NOT NULL,
+    CONSTRAINT "pk_address" PRIMARY KEY (
+        "add_id"
+     )
 );
 
 CREATE TABLE "item" (
@@ -39,7 +42,7 @@ CREATE TABLE "item" (
     "item_name" varchar(100)   NOT NULL,
     "item_cat" varchar(100)   NOT NULL,
     "item_size" varchar(10)   NOT NULL,
-    "item_price" decimal(5, 2)   NOT NULL,
+    "item_price" decimal(5,2)   NOT NULL,
     CONSTRAINT "pk_item" PRIMARY KEY (
         "item_id"
      )
@@ -50,7 +53,7 @@ CREATE TABLE "ingredient" (
     "ing_name" varchar(100)   NOT NULL,
     "ing_weight" int   NOT NULL,
     "ing_meas" varchar(20)   NOT NULL,
-    "ing_price" decimal(5, 2)   NOT NULL,
+    "ing_price" decimal(5,2)   NOT NULL,
     CONSTRAINT "pk_ingredient" PRIMARY KEY (
         "ing_id"
      )
@@ -99,7 +102,7 @@ CREATE TABLE "shift" (
 CREATE TABLE "roster" (
     "row_id" int   NOT NULL,
     "rota_id" varchar(10)   NOT NULL,
-    "date" date NOT NULL,
+    "date" date   NOT NULL,
     "shift_id" varchar(10)   NOT NULL,
     "staff_id" varchar(10)   NOT NULL,
     CONSTRAINT "pk_roster" PRIMARY KEY (
@@ -107,30 +110,30 @@ CREATE TABLE "roster" (
      )
 );
 
-ALTER TABLE "Customer" ADD CONSTRAINT "fk_Customer_cust_id" FOREIGN KEY("cust_id")
-REFERENCES "Order" ("cust_id");
+ALTER TABLE "Order" ADD CONSTRAINT "fk_Order_item_id" FOREIGN KEY("item_id")
+REFERENCES "item" ("item_id");
 
-ALTER TABLE "address" ADD CONSTRAINT "fk_address_add_id" FOREIGN KEY("add_id")
-REFERENCES "Order" ("add_id");
+ALTER TABLE "Order" ADD CONSTRAINT "fk_Order_cust_id" FOREIGN KEY("cust_id")
+REFERENCES "Customer" ("cust_id");
 
-ALTER TABLE "item" ADD CONSTRAINT "fk_item_item_id" FOREIGN KEY("item_id")
-REFERENCES "Order" ("item_id");
+ALTER TABLE "Order" ADD CONSTRAINT "fk_Order_add_id" FOREIGN KEY("add_id")
+REFERENCES "address" ("add_id");
 
-ALTER TABLE "ingredient" ADD CONSTRAINT "fk_ingredient_ing_id" FOREIGN KEY("ing_id")
-REFERENCES "recipe" ("ing_id");
+ALTER TABLE "item" ADD CONSTRAINT "fk_item_sku" FOREIGN KEY("sku")
+REFERENCES "recipe" ("recipe_id");
 
-ALTER TABLE "recipe" ADD CONSTRAINT "fk_recipe_recipe_id" FOREIGN KEY("recipe_id")
-REFERENCES "item" ("sku");
+ALTER TABLE "recipe" ADD CONSTRAINT "fk_recipe_ing_id" FOREIGN KEY("ing_id")
+REFERENCES "ingredient" ("ing_id");
 
 ALTER TABLE "inventory" ADD CONSTRAINT "fk_inventory_item_id" FOREIGN KEY("item_id")
 REFERENCES "recipe" ("ing_id");
 
-ALTER TABLE "staff" ADD CONSTRAINT "fk_staff_staff_id" FOREIGN KEY("staff_id")
-REFERENCES "roster" ("staff_id");
-
-ALTER TABLE "shift" ADD CONSTRAINT "fk_shift_shift_id" FOREIGN KEY("shift_id")
-REFERENCES "roster" ("shift_id");
-
 ALTER TABLE "roster" ADD CONSTRAINT "fk_roster_date" FOREIGN KEY("date")
 REFERENCES "Order" ("created_at");
+
+ALTER TABLE "roster" ADD CONSTRAINT "fk_roster_shift_id" FOREIGN KEY("shift_id")
+REFERENCES "shift" ("shift_id");
+
+ALTER TABLE "roster" ADD CONSTRAINT "fk_roster_staff_id" FOREIGN KEY("staff_id")
+REFERENCES "staff" ("staff_id");
 
