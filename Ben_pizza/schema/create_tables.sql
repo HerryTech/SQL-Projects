@@ -39,7 +39,7 @@ CREATE TABLE "item" (
     "item_name" varchar(100)   NOT NULL,
     "item_cat" varchar(100)   NOT NULL,
     "item_size" varchar(10)   NOT NULL,
-    "item_price" decimal(10.2)   NOT NULL,
+    "item_price" decimal(5, 2)   NOT NULL,
     CONSTRAINT "pk_item" PRIMARY KEY (
         "item_id"
      )
@@ -50,7 +50,7 @@ CREATE TABLE "ingredient" (
     "ing_name" varchar(100)   NOT NULL,
     "ing_weight" int   NOT NULL,
     "ing_meas" varchar(20)   NOT NULL,
-    "ing_price" decimal(5.2)   NOT NULL,
+    "ing_price" decimal(5, 2)   NOT NULL,
     CONSTRAINT "pk_ingredient" PRIMARY KEY (
         "ing_id"
      )
@@ -80,7 +80,7 @@ CREATE TABLE "staff" (
     "first_name" varchar(100)   NOT NULL,
     "last_name" varchar(100)   NOT NULL,
     "position" varchar(100)   NOT NULL,
-    "hourly_rate" decimal(10.2)   NOT NULL,
+    "hourly_rate" decimal(5,2)   NOT NULL,
     CONSTRAINT "pk_staff" PRIMARY KEY (
         "staff_id"
      )
