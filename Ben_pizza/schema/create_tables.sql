@@ -1,4 +1,6 @@
-﻿Create table():
+﻿Create table order(
+
+):
 row_id int PK
 order_id int
 created_at timestamp
