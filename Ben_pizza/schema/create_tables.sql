@@ -52,9 +52,9 @@ FOREIGN KEY(ing_id) REFERENCES ingredient(ing_id)
 
 Create table inventory(
 inv_id int primary key
-item_id varchar(10), FK >- recipe.ing_id
+ing_id varchar(10),
 quantity int,
-FOREIGN KEY(item_id) REFERENCES ingredient(ing_id)
+FOREIGN KEY(ing_id) REFERENCES recipe(ing_id)
 );
 
 Create table staff(
