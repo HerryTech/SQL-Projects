@@ -50,13 +50,12 @@ quantity int,
 FOREIGN KEY(ing_id) REFERENCES ingredient(ing_id)
 );
 
-
-
-Create table():inventory
--
-inv_id int pk
-item_id varchar(10) FK >- recipe.ing_id
-quantity int
+Create table inventory(
+inv_id int primary key
+item_id varchar(10), FK >- recipe.ing_id
+quantity int,
+FOREIGN KEY(item_id) REFERENCES ingredient(ing_id)
+);
 
 Create table():staff
 -
