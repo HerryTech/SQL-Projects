@@ -24,16 +24,16 @@ delivery_city varchar(20),
 delivery_zipcode int
 );
 
-
-
-Create table():item
--
-item_id varchar(10) pk
+Create table item(
+item_id varchar(10) primary key,
 sku varchar(20) FK >- recipe.recipe_id
-item_name varchar(100)
-item_cat varchar(100)
-item_size varchar(10)
-item_price decimal(5,2)
+item_name varchar(100),
+item_cat varchar(100),
+item_size varchar(10),
+item_price decimal(5,2),
+);
+
+
 
 Create table():ingredient
 -
