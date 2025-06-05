@@ -1,10 +1,10 @@
-﻿CREATE TABLE orders(
-row_id INT PRIMARY KEY,
-order_id INT,
+﻿Create table orders(
+row_id int primary key,
+order_id int,
 created_at timestamp,
 item_id varchar(10),
-cust_id INT,
-add_id int
+cust_id int,
+add_id int,
 FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
 FOREIGN KEY(add_id) REFERENCES address(item_id)
 );
