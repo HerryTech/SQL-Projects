@@ -10,8 +10,8 @@ FOREIGN KEY(add_id) REFERENCES address(add_id)
 );
 
 Create table customers(
-cust_id int pk
-cust_firstname varchar(50)
+cust_id int primary key,
+cust_firstname varchar(50),
 cust_secondname varchar(50)
 ):
 
