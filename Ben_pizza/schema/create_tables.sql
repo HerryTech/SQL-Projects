@@ -24,17 +24,7 @@ FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
 FOREIGN KEY(add_id) REFERENCES address(add_id)
 );
 
-Create table items(
-item_id varchar(10) primary key,
-sku varchar(20),
-item_name varchar(100),
-item_cat varchar(100),
-item_size varchar(10),
-item_price decimal(5,2),
-FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
-);
-
-Create table ingreadients(
+Create table ingredients(
 ing_id varchar(10) primary key,
 ing_name varchar(100),
 ing_weight int,
@@ -44,10 +34,20 @@ ing_price decimal(5,2)
 
 Create table recipe(
 row_id int primary key,
-recipe_id varchar(20),
+recipe_id varchar(20) unique,
 ing_id varchar(20), 
 quantity int,
-FOREIGN KEY(ing_id) REFERENCES ingredient(ing_id)
+FOREIGN KEY(ing_id) REFERENCES ingredients(ing_id)
+);
+
+Create table items(
+item_id varchar(10) primary key,
+sku varchar(20),
+item_name varchar(100),
+item_cat varchar(100),
+item_size varchar(10),
+item_price decimal(5,2),
+FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
 );
 
 Create table inventory(
