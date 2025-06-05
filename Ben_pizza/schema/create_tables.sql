@@ -16,11 +16,11 @@ cust_secondname varchar(50)
 ):
 
 Create table address(
-add_id int pk
-delivery boolean
-delivery_address1 varchar(200)
-delivery_address2 varchar(200) NULL
-delivery_city varchar(20)
+add_id int primary key,
+delivery boolean,
+delivery_address1 varchar(200),
+delivery_address2 varchar(200) NULL,
+delivery_city varchar(20),
 delivery_zipcode int
 );
 
