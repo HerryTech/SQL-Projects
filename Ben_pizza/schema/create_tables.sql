@@ -13,7 +13,7 @@ Create table customers(
 cust_id int primary key,
 cust_firstname varchar(50),
 cust_secondname varchar(50)
-):
+);
 
 Create table address(
 add_id int primary key,
