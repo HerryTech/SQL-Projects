@@ -72,13 +72,16 @@ start_time timestamp,
 end_time timestamp,
 );
 
-Create table():roster
--
-row_id int pk
-rota_id varchar(10)
-date date FK >- Order.created_at
-shift_id varchar(10) FK >- shift.shift_id
-staff_id varchar(10) FK >- staff.staff_id
+Create table roster(
+row_id int primary key,
+rota_id varchar(10),
+date date,
+shift_id varchar(10),
+staff_id varchar(10),
+FOREIGN KEY(date) REFERENCES orders(created_at),
+FOREIGN KEY(shift_id) REFERENCES shift(shift_id),
+FOREIGN KEY(staff_id) REFERENCES staff(staff_id)
+);
 
 
 
