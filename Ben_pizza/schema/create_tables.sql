@@ -1,15 +1,4 @@
-﻿Create table orders(
-row_id int primary key,
-order_id int,
-created_at timestamp,
-item_id varchar(10),
-cust_id int,
-add_id int,
-FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
-FOREIGN KEY(add_id) REFERENCES address(add_id)
-);
-
-Create table customers(
+﻿Create table customers(
 cust_id int primary key,
 cust_firstname varchar(50),
 cust_secondname varchar(50)
@@ -22,6 +11,17 @@ delivery_address1 varchar(200),
 delivery_address2 varchar(200) NULL,
 delivery_city varchar(20),
 delivery_zipcode int
+);
+
+Create table orders(
+row_id int primary key,
+order_id int,
+created_at timestamp,
+item_id varchar(10),
+cust_id int,
+add_id int,
+FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
+FOREIGN KEY(add_id) REFERENCES address(add_id)
 );
 
 Create table items(
@@ -39,7 +39,7 @@ ing_id varchar(10) primary key,
 ing_name varchar(100),
 ing_weight int,
 ing_meas varchar(20),
-ing_price decimal(5,2),
+ing_price decimal(5,2)
 );
 
 Create table recipe(
@@ -62,7 +62,7 @@ staff_id varchar(10) primary key,
 first_name varchar(100),
 last_name varchar(100),
 position varchar(100),
-hourly_rate decimal(5,2),
+hourly_rate decimal(5,2)
 );
 
 Create table shift(
