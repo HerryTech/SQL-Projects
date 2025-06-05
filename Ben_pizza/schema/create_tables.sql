@@ -9,12 +9,11 @@ FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
 FOREIGN KEY(add_id) REFERENCES address(item_id)
 );
 
-
-Create table():Customer
--
+Create table customers(
 cust_id int pk
 cust_firstname varchar(50)
 cust_secondname varchar(50)
+):
 
 Create table():address
 -
