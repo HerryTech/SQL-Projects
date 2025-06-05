@@ -26,11 +26,12 @@ delivery_zipcode int
 
 Create table item(
 item_id varchar(10) primary key,
-sku varchar(20) FK >- recipe.recipe_id
+sku varchar(20)
 item_name varchar(100),
 item_cat varchar(100),
 item_size varchar(10),
 item_price decimal(5,2),
+FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
 );
 
 
