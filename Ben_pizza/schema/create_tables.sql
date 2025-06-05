@@ -1,12 +1,12 @@
-﻿Create table order(
+﻿CREATE TABLE order(
+row_id INT PRIMARY KEY,
+order_id INT,
+created_at timestamp,
+item_id varchar(10),
+cust_id INT,
+add_id int
+);
 
-):
-row_id int PK
-order_id int
-created_at timestamp
-item_id varchar(10) FK >- item.item_id
-cust_id int FK >- Customer.cust_id
-add_id int FK >- address.add_id
 
 Create table():Customer
 -
