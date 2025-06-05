@@ -42,12 +42,15 @@ ing_meas varchar(20),
 ing_price decimal(5,2),
 );
 
-Create table():recipe
--
-row_id int pk
-recipe_id varchar(20) UNIQUE
-ing_id varchar(20) FK >- ingredient.ing_id
-quantity int
+Create table recipe(
+row_id int primary key,
+recipe_id varchar(20),
+ing_id varchar(20), 
+quantity int,
+FOREIGN KEY(ing_id) REFERENCES ingredient(ing_id)
+);
+
+
 
 Create table():inventory
 -
