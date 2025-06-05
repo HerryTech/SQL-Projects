@@ -6,7 +6,7 @@ item_id varchar(10),
 cust_id int,
 add_id int,
 FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
-FOREIGN KEY(add_id) REFERENCES address(item_id)
+FOREIGN KEY(add_id) REFERENCES address(add_id)
 );
 
 Create table customers(
