@@ -57,16 +57,17 @@ quantity int,
 FOREIGN KEY(item_id) REFERENCES ingredient(ing_id)
 );
 
-Create table():staff
--
-staff_id varchar(10) pk
-first_name varchar(100)
-last_name varchar(100)
-position varchar(100)
-hourly_rate decimal(5,2)
+Create table staff(
+staff_id varchar(10) primary key,
+first_name varchar(100),
+last_name varchar(100),
+position varchar(100),
+hourly_rate decimal(5,2),
+);
 
-Create table():shift
--
+Create table shift(
+
+);
 shift_id varchar(10) pk
 day_of_week varchar(20)
 start_time timestamp
