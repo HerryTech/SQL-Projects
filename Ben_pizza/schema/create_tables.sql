@@ -15,14 +15,16 @@ cust_firstname varchar(50)
 cust_secondname varchar(50)
 ):
 
-Create table():address
--
+Create table address(
 add_id int pk
 delivery boolean
 delivery_address1 varchar(200)
 delivery_address2 varchar(200) NULL
 delivery_city varchar(20)
 delivery_zipcode int
+);
+
+
 
 Create table():item
 -
