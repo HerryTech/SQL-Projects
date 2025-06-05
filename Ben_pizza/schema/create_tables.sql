@@ -66,12 +66,11 @@ hourly_rate decimal(5,2),
 );
 
 Create table shift(
-
+shift_id varchar(10) primary key,
+day_of_week varchar(20),
+start_time timestamp,
+end_time timestamp,
 );
-shift_id varchar(10) pk
-day_of_week varchar(20)
-start_time timestamp
-end_time timestamp
 
 Create table():roster
 -
