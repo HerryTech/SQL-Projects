@@ -26,7 +26,7 @@ delivery_zipcode int
 
 Create table item(
 item_id varchar(10) primary key,
-sku varchar(20)
+sku varchar(20),
 item_name varchar(100),
 item_cat varchar(100),
 item_size varchar(10),
