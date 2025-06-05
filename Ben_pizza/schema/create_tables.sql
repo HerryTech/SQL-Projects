@@ -24,7 +24,7 @@ delivery_city varchar(20),
 delivery_zipcode int
 );
 
-Create table item(
+Create table items(
 item_id varchar(10) primary key,
 sku varchar(20),
 item_name varchar(100),
@@ -34,7 +34,7 @@ item_price decimal(5,2),
 FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
 );
 
-Create table ingreadient(
+Create table ingreadients(
 ing_id varchar(10) primary key,
 ing_name varchar(100),
 ing_weight int,
@@ -51,7 +51,7 @@ FOREIGN KEY(ing_id) REFERENCES ingredient(ing_id)
 );
 
 Create table inventory(
-inv_id int primary key
+inv_id int primary key,
 ing_id varchar(10),
 quantity int,
 FOREIGN KEY(ing_id) REFERENCES recipe(ing_id)
@@ -69,7 +69,7 @@ Create table shift(
 shift_id varchar(10) primary key,
 day_of_week varchar(20),
 start_time timestamp,
-end_time timestamp,
+end_time timestamp
 );
 
 Create table roster(
