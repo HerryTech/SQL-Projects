@@ -34,15 +34,13 @@ item_price decimal(5,2),
 FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
 );
 
-
-
-Create table():ingredient
--
-ing_id varchar(10) pk
+Create table ingreadient(
+ing_id varchar(10) primary key
 ing_name varchar(100)
 ing_weight int
 ing_meas varchar(20)
 ing_price decimal(5,2)
+);
 
 Create table():recipe
 -
