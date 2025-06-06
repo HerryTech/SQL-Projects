@@ -33,8 +33,7 @@ ing_price decimal(5,2)
 );
 
 Create table recipe(
-row_id int primary key,
-recipe_id varchar(20) unique,
+recipe_id varchar(20) primary key,
 ing_id varchar(20), 
 quantity int,
 FOREIGN KEY(ing_id) REFERENCES ingredients(ing_id)
