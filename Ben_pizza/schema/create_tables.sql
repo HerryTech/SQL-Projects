@@ -1,92 +1,94 @@
-﻿Create table customers(
-cust_id int primary key,
-cust_firstname varchar(50),
-cust_secondname varchar(50)
+﻿-- 1. Customers
+CREATE TABLE customers (
+    cust_id INT PRIMARY KEY,
+    cust_firstname VARCHAR(50),
+    cust_secondname VARCHAR(50)
 );
 
-Create table address(
-add_id int primary key,
-delivery boolean,
-delivery_address1 varchar(200),
-delivery_address2 varchar(200) NULL,
-delivery_city varchar(20),
-delivery_zipcode int
+-- 2. Address
+CREATE TABLE address (
+    add_id INT PRIMARY KEY,
+    delivery BOOLEAN,
+    delivery_address1 VARCHAR(200) NOT NULL,
+    delivery_address2 VARCHAR(200),
+    delivery_city VARCHAR(20),
+    delivery_zipcode INT
 );
 
-Create table orders(
-row_id int primary key,
-order_id int,
-created_at timestamp,
-item_id varchar(10),
-cust_id int,
-add_id int,
-FOREIGN KEY(cust_id) REFERENCES customers(cust_id),
-FOREIGN KEY(add_id) REFERENCES address(add_id)
+-- 3. Ingredients
+CREATE TABLE ingredients (
+    ing_id VARCHAR(10) PRIMARY KEY,
+    ing_name VARCHAR(100),
+    ing_weight INT,
+    ing_meas VARCHAR(20),
+    ing_price DECIMAL(5,2)
 );
 
-Create table ingredients(
-ing_id varchar(10) primary key,
-ing_name varchar(100),
-ing_weight int,
-ing_meas varchar(20),
-ing_price decimal(5,2)
+-- 4. Items (Pizzas etc.)
+CREATE TABLE items (
+    item_id VARCHAR(10) PRIMARY KEY,
+    item_name VARCHAR(100),
+    item_cat VARCHAR(100),
+    item_size VARCHAR(10),
+    item_price DECIMAL(5,2)
 );
 
-Create table recipe(
-recipe_id varchar(20) primary key,
-ing_id varchar(20), 
-quantity int,
-FOREIGN KEY(ing_id) REFERENCES ingredients(ing_id)
+-- 5. Recipe - connects items with ingredients
+CREATE TABLE recipe (
+    row_id INT PRIMARY KEY,
+    item_id VARCHAR(10),
+    ing_id VARCHAR(10), 
+    quantity INT,
+    FOREIGN KEY (item_id) REFERENCES items(item_id),
+    FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id)
 );
 
-Create table items(
-item_id varchar(10) primary key,
-sku varchar(20),
-item_name varchar(100),
-item_cat varchar(100),
-item_size varchar(10),
-item_price decimal(5,2),
-FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
+-- 6. Inventory - track stock levels of ingredients
+CREATE TABLE inventory (
+    inv_id INT PRIMARY KEY,
+    ing_id VARCHAR(10),
+    quantity INT,
+    FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id)
 );
 
-CREATE TABLE inventory(
-inv_id int primary key,
-ing_id varchar(10),
-quantity int,
-FOREIGN KEY(ing_id) REFERENCES ingredients(ing_id)
+-- 7. Orders - must come after items, customers, address
+CREATE TABLE orders (
+    row_id INT PRIMARY KEY,
+    order_id INT,
+    created_at TIMESTAMP,
+    item_id VARCHAR(10),
+    quantity INT,
+    cust_id INT,
+    add_id INT,
+    FOREIGN KEY (cust_id) REFERENCES customers(cust_id),
+    FOREIGN KEY (add_id) REFERENCES address(add_id),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
 
-
-Create table staff(
-staff_id varchar(10) primary key,
-first_name varchar(100),
-last_name varchar(100),
-position varchar(100),
-hourly_rate decimal(5,2)
+-- 8. Staff
+CREATE TABLE staff (
+    staff_id VARCHAR(10) PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    position VARCHAR(100),
+    hourly_rate DECIMAL(5,2)
 );
 
-Create table shift(
-shift_id varchar(10) primary key,
-day_of_week varchar(20),
-start_time timestamp,
-end_time timestamp
+-- 9. Shift
+CREATE TABLE shift (
+    shift_id VARCHAR(10) PRIMARY KEY,
+    day_of_week VARCHAR(20),
+    start_time TIMESTAMP,
+    end_time TIMESTAMP
 );
 
-Create table roster(
-row_id int primary key,
-rota_id varchar(10),
-date date,
-shift_id varchar(10),
-staff_id varchar(10),
-FOREIGN KEY(date) REFERENCES orders(created_at),
-FOREIGN KEY(shift_id) REFERENCES shift(shift_id),
-FOREIGN KEY(staff_id) REFERENCES staff(staff_id)
+-- 10. Roster (schedule)
+CREATE TABLE roster (
+    row_id INT PRIMARY KEY,
+    rota_id VARCHAR(10),
+    date DATE,
+    shift_id VARCHAR(10),
+    staff_id VARCHAR(10),
+    FOREIGN KEY (shift_id) REFERENCES shift(shift_id),
+    FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
-
-
-
-
-
-
-
-
