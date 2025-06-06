@@ -49,12 +49,13 @@ item_price decimal(5,2),
 FOREIGN KEY(sku) REFERENCES recipe(recipe_id)
 );
 
-Create table inventory(
+CREATE TABLE inventory(
 inv_id int primary key,
 ing_id varchar(10),
 quantity int,
-FOREIGN KEY(ing_id) REFERENCES recipe(ing_id)
+FOREIGN KEY(ing_id) REFERENCES ingredients(ing_id)
 );
+
 
 Create table staff(
 staff_id varchar(10) primary key,
