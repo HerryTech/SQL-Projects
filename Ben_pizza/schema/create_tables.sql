@@ -15,7 +15,7 @@ CREATE TABLE address (
     delivery_zipcode INT
 );
 
--- 3. Items (Pizzas etc.)
+-- 3. Items
 CREATE TABLE items (
     item_id VARCHAR(10) PRIMARY KEY,
     item_name VARCHAR(100),
@@ -24,7 +24,7 @@ CREATE TABLE items (
     item_price DECIMAL(5,2)
 );
 
--- 7. Orders - must come after items, customers, address
+-- 4. Orders - must come after items, customers, address
 CREATE TABLE orders (
     row_id INT PRIMARY KEY,
     order_id INT,
@@ -38,7 +38,7 @@ CREATE TABLE orders (
     FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
 
--- 4. Ingredients
+-- 5. Ingredients
 CREATE TABLE ingredients (
     ing_id VARCHAR(10) PRIMARY KEY,
     ing_name VARCHAR(100),
@@ -47,7 +47,7 @@ CREATE TABLE ingredients (
     ing_price DECIMAL(5,2)
 );
 
--- 5. Recipe - connects items with ingredients
+-- 6. Recipe - connects items with ingredients
 CREATE TABLE recipe (
     row_id INT PRIMARY KEY,
     item_id VARCHAR(10),
@@ -57,7 +57,7 @@ CREATE TABLE recipe (
     FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id)
 );
 
--- 6. Inventory - track stock levels of ingredients
+-- 7. Inventory - track stock levels of ingredients
 CREATE TABLE inventory (
     inv_id INT PRIMARY KEY,
     ing_id VARCHAR(10),
