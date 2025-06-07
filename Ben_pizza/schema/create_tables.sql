@@ -113,7 +113,7 @@ CREATE TABLE suppliers(
 	email VARCHAR(100)
 );
 
---13. Ingredient Supplied
+-- 13. Ingredient Supplied
 CREATE TABLE ingredient_supplier(
 	row_id INT PRIMARY KEY,
 	sup_id VARCHAR(100),
@@ -121,3 +121,5 @@ CREATE TABLE ingredient_supplier(
 	FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id),
     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
 );
+
+-- 14. 
