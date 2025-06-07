@@ -119,7 +119,7 @@ CREATE TABLE ingredient_supplier(
 	sup_id VARCHAR(100),
 	ing_id VARCHAR(10),
 	FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id),
-    FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
+    FOREIGN KEY (sup_id) REFERENCES suppliers(sup_id)
 );
 
 -- 14. Trigger function to auto-update inventory on order
