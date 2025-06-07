@@ -24,6 +24,20 @@ CREATE TABLE items (
     item_price DECIMAL(5,2)
 );
 
+-- 7. Orders - must come after items, customers, address
+CREATE TABLE orders (
+    row_id INT PRIMARY KEY,
+    order_id INT,
+    created_at TIMESTAMP,
+    item_id VARCHAR(10),
+    quantity INT,
+    cust_id INT,
+    add_id INT,
+    FOREIGN KEY (cust_id) REFERENCES customers(cust_id),
+    FOREIGN KEY (add_id) REFERENCES address(add_id),
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
+);
+
 -- 4. Ingredients
 CREATE TABLE ingredients (
     ing_id VARCHAR(10) PRIMARY KEY,
@@ -49,20 +63,6 @@ CREATE TABLE inventory (
     ing_id VARCHAR(10),
     quantity INT,
     FOREIGN KEY (ing_id) REFERENCES ingredients(ing_id)
-);
-
--- 7. Orders - must come after items, customers, address
-CREATE TABLE orders (
-    row_id INT PRIMARY KEY,
-    order_id INT,
-    created_at TIMESTAMP,
-    item_id VARCHAR(10),
-    quantity INT,
-    cust_id INT,
-    add_id INT,
-    FOREIGN KEY (cust_id) REFERENCES customers(cust_id),
-    FOREIGN KEY (add_id) REFERENCES address(add_id),
-    FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
 
 -- 8. Staff
