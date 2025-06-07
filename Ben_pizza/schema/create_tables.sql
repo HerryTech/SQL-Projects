@@ -96,12 +96,12 @@ CREATE TABLE roster (
 --11 Payment
 CREATE TABLE payment(
 	pay_id INT PRIMARY KEY,
-	order_id INT,
+	row_id INT,
 	pay_method VARCHAR(20),
 	pay_status VARCHAR(20),
 	amount DECIMAL(10,2),
 	paid_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	FOREIGN KEY (order_id) REFERENCES orders(order_id)
+	FOREIGN KEY (row_id) REFERENCES orders(order_id)
 );
 
 -- 12. Suppliers
