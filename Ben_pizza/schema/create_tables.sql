@@ -93,7 +93,12 @@ CREATE TABLE roster (
     FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
 
--- 11. Suppliers
+--11 Payment
+CREATE TABLE payment(
+
+);
+
+-- 12. Suppliers
 CREATE TABLE suppliers(
 	sup_id VARCHAR(10) PRIMARY KEY,
 	sup_name VARCHAR(100),
@@ -102,7 +107,7 @@ CREATE TABLE suppliers(
 	email VARCHAR(100)
 );
 
---12. Ingredient Supplied
+--13. Ingredient Supplied
 CREATE TABLE ingredient_supplier(
 	row_id INT PRIMARY KEY,
 	sup_id VARCHAR(100),
