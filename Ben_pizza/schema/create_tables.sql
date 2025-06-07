@@ -134,9 +134,11 @@ BEGIN
 	LOOP
 		-- Deduct stock in inventory based on ordered quantity
 		UPDATE inventory
-		SET quantity = quantity -item_ingredient.quantity * NEW.quantity
-		WHERE ing_id = 
-	RETURN
-END
+		SET quantity = quantity - (item_ingredient.quantity * NEW.quantity)
+		WHERE ing_id = item_ingredient.ing_id;
+	END LOOP;
+	
+	RETURN NEW;
+END;
 $$ LANGUAGE plpgsql;
 
