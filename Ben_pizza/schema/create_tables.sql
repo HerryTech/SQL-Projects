@@ -92,3 +92,12 @@ CREATE TABLE roster (
     FOREIGN KEY (shift_id) REFERENCES shift(shift_id),
     FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
+
+-- 11. Suppliers
+CREATE TABLE suppliers(
+	sup_id VARCHAR(10) PRIMARY KEY,
+	sup_name VARCHAR(100),
+	contact_name VARCHAR(100),
+	contact_phone VARCHAR(20),
+	email VARCHAR(100)
+);
