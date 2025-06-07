@@ -142,3 +142,10 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+-- Trigger
+CREATE TRIGGER trg_update_inventory
+AFTER INSERT
+ON orders
+FOR EACH ROW
+EXECUTE FUNCTION update_inventory_after_order();
+
