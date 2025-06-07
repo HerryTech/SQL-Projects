@@ -125,6 +125,7 @@ CREATE TABLE ingredient_supplier(
 -- 14. Trigger function to auto-update inventory on order
 CREATE OR REPLACE FUNCTION update_inventory_after_order()
 RETURNS TRIGGER AS $$
+DECLARE item_ingredient RECORD;
 BEGIN
 	-- Loop through each ingredient in the recipe for the ordered item
 	FOR item_ingredient IN
