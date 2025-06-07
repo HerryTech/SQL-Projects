@@ -122,4 +122,21 @@ CREATE TABLE ingredient_supplier(
     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
 );
 
--- 14. 
+-- 14. Trigger to Auto-Update Inventory on Order
+CREATE OR REPLACE FUNCTION update_inventory_after_order()
+RETURN TRIGGER AS $$
+BEGIN
+	-- Loop through each ingredient in the recipe for the ordered item
+	FOR item_ingredient IN
+		SELECT r.ing_id, r.quantity
+		FROM recipe r
+		WHERE item_id = NEW.item_id
+	LOOP
+		-- Deduct stock in inventory based on ordered quantity
+		UPDATE inventory
+		SET quantity = quantity -item_ingredient.quantity * NEW.quantity
+		WHERE ing_id = 
+	RETURN
+END
+$$ LANGUAGE plpgsql;
+
