@@ -24,7 +24,7 @@ CREATE TABLE items (
     item_price DECIMAL(5,2)
 );
 
--- 4. Orders - must come after items, customers, address
+-- 4. Orders
 CREATE TABLE orders (
     row_id INT PRIMARY KEY,
     order_id INT,
