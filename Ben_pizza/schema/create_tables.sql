@@ -15,22 +15,22 @@ CREATE TABLE address (
     delivery_zipcode INT
 );
 
--- 3. Ingredients
-CREATE TABLE ingredients (
-    ing_id VARCHAR(10) PRIMARY KEY,
-    ing_name VARCHAR(100),
-    ing_weight INT,
-    ing_meas VARCHAR(20),
-    ing_price DECIMAL(5,2)
-);
-
--- 4. Items (Pizzas etc.)
+-- 3. Items (Pizzas etc.)
 CREATE TABLE items (
     item_id VARCHAR(10) PRIMARY KEY,
     item_name VARCHAR(100),
     item_cat VARCHAR(100),
     item_size VARCHAR(10),
     item_price DECIMAL(5,2)
+);
+
+-- 4. Ingredients
+CREATE TABLE ingredients (
+    ing_id VARCHAR(10) PRIMARY KEY,
+    ing_name VARCHAR(100),
+    ing_weight INT,
+    ing_meas VARCHAR(20),
+    ing_price DECIMAL(5,2)
 );
 
 -- 5. Recipe - connects items with ingredients
