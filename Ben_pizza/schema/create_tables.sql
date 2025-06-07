@@ -101,7 +101,7 @@ CREATE TABLE payment(
 	pay_status VARCHAR(20),
 	amount DECIMAL(10,2),
 	paid_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	FOREIGN KEY (row_id) REFERENCES orders(order_id)
+	FOREIGN KEY (row_id) REFERENCES orders(row_id)
 );
 
 -- 12. Suppliers
