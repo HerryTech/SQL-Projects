@@ -122,7 +122,7 @@ CREATE TABLE ingredient_supplier(
     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
 );
 
--- 14. Trigger to Auto-Update Inventory on Order
+-- 14. Trigger function to auto-update inventory on order
 CREATE OR REPLACE FUNCTION update_inventory_after_order()
 RETURN TRIGGER AS $$
 BEGIN
@@ -142,7 +142,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Trigger
+-- 15. Trigger
 CREATE TRIGGER trg_update_inventory
 AFTER INSERT
 ON orders
