@@ -1,0 +1,11 @@
+﻿staff_id,first_name,last_name,position,hourly_rate
+ST001,Ben,Carter,Owner,30
+ST002,Sarah,Johnson,Chef,18.5
+ST003,Mike,Davis,Chef,17.75
+ST004,Lisa,Brown,Delivery Driver,12
+ST005,James,Wilson,Delivery Driver,12.5
+ST006,Emma,Thompson,Cashier,11
+ST007,David,Miller,Cashier,11.25
+ST008,Olivia,Martinez,Kitchen Helper,14
+ST009,Robert,Garcia,Kitchen Helper,13.75
+ST010,Anna,Lee,Manager,22
