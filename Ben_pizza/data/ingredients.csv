@@ -1,0 +1,20 @@
+﻿ing_id,ing_name,ing_weight,ing_meas,ing_price
+ING001,Tomato Sauce,300,ml,2
+ING002,Mozzarella Cheese,200,grams,5
+ING003,Basil Leaves,10,grams,1
+ING004,Pepperoni Slices,150,grams,4.5
+ING005,Bell Peppers,100,grams,2.5
+ING006,Onions,80,grams,1.5
+ING007,Mushrooms,100,grams,2
+ING008,Olives,50,grams,2
+ING009,BBQ Chicken,180,grams,6
+ING010,Ham,150,grams,5.5
+ING011,Ground Beef,200,grams,7
+ING012,Pineapple,120,grams,3
+ING013,Parmesan Cheese,100,grams,6.5
+ING014,Garlic,10,grams,1
+ING015,Oregano,5,grams,0.8
+ING016,BBQ Sauce,300,ml,3
+ING017,Sausage,150,grams,5
+ING018,Cheddar Cheese,150,grams,6
+ING019,Blue Cheese,100,grams,7
