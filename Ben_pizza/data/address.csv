@@ -1,0 +1,31 @@
+﻿add_id,delivery,delivery_address1,delivery_address2,delivery_city,delivery_zipcode
+1,TRUE,12 Oak Street,Apt 2A,New York,10001
+2,FALSE,45 Pine Avenue,,Brooklyn,11215
+3,TRUE,88 Elm Crescent,Suite 5,Chicago,60614
+4,TRUE,17 Maple Road,,Newark,7104
+5,FALSE,90 Cherry Lane,Flat 1,Miami,33101
+6,TRUE,234 Birch Boulevard,,Dallas,75201
+7,TRUE,100 Willow Street,Apt B,Houston,77002
+8,FALSE,76 Redwood Way,,Phoenix,85001
+9,TRUE,11 Aspen Court,Unit 3,San Diego,92101
+10,TRUE,55 Cedar Street,,Orlando,32801
+11,FALSE,87 Palm Drive,Apt 9,Seattle,98101
+12,TRUE,19 Magnolia Crescent,,Boston,2108
+13,TRUE,31 Olive Street,Apt 12B,Atlanta,30303
+14,FALSE,42 Spruce Avenue,,Denver,80202
+15,TRUE,78 Hickory Street,Unit 4,Austin,73301
+16,TRUE,63 Poplar Lane,,Detroit,48201
+17,TRUE,29 Cypress Road,,Las Vegas,89101
+18,FALSE,110 Sycamore Street,Apt 2D,Portland,97201
+19,TRUE,56 Dogwood Court,,Sacramento,94203
+20,TRUE,9 Chestnut Boulevard,Apt 7,Tampa,33602
+21,TRUE,15 Beech Street,,Raleigh,27601
+22,TRUE,39 Linden Lane,Suite 3B,Nashville,37201
+23,FALSE,101 Elmwood Avenue,,Minneapolis,55401
+24,TRUE,65 Fir Road,Apt A,Charlotte,28202
+25,TRUE,14 Hawthorn Crescent,,Pittsburgh,15222
+26,FALSE,88 Sequoia Street,Unit 1,Kansas City,64106
+27,TRUE,70 Pineapple Drive,Apt 6,Cincinnati,45202
+28,TRUE,22 Ash Court,,Indianapolis,46204
+29,TRUE,99 Walnut Street,Apt 3A,St. Louis,63101
+30,TRUE,40 Alder Way,,Baltimore,21201
