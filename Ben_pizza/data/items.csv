@@ -1,0 +1,25 @@
+﻿item_id,item_name,item_cat,item_size,item_price
+PZ001,Margherita,Pizza,Small,5.99
+PZ002,Margherita,Pizza,Medium,7.99
+PZ003,Margherita,Pizza,Large,9.99
+PZ004,Pepperoni,Pizza,Small,6.49
+PZ005,Pepperoni,Pizza,Medium,8.49
+PZ006,Pepperoni,Pizza,Large,10.49
+PZ007,Veggie Delight,Pizza,Small,6.25
+PZ008,Veggie Delight,Pizza,Medium,8.25
+PZ009,Veggie Delight,Pizza,Large,10.25
+PZ010,BBQ Chicken,Pizza,Small,6.99
+PZ011,BBQ Chicken,Pizza,Medium,8.99
+PZ012,BBQ Chicken,Pizza,Large,10.99
+PZ013,Meat Feast,Pizza,Small,7.49
+PZ014,Meat Feast,Pizza,Medium,9.49
+PZ015,Meat Feast,Pizza,Large,11.99
+PZ016,Hawaiian,Pizza,Small,6.49
+PZ017,Hawaiian,Pizza,Medium,8.49
+PZ018,Hawaiian,Pizza,Large,10.49
+PZ019,Four Cheese,Pizza,Small,6.75
+PZ020,Four Cheese,Pizza,Medium,8.75
+PZ021,Four Cheese,Pizza,Large,10.75
+PZ022,Spicy Beef,Pizza,Small,6.99
+PZ023,Spicy Beef,Pizza,Medium,9.25
+PZ024,Spicy Beef,Pizza,Large,11.25
