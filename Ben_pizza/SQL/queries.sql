@@ -69,4 +69,9 @@ from address a
 join orders o on a.add_id = o.add_id
 group by a.delivery;
 
+--11. Order by city
+select a.delivery_city, count(*) as total_order
+from address a
+join orders o on a.add_id = o.add_id
+group by a.delivery_city;
 
