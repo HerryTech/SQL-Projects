@@ -34,3 +34,9 @@ join payment p on o.row_id = p.row_id
 where p.pay_status = 'Paid'
 group by item_name
 order by revenue desc;
+
+--INVENTORY MONITORING
+--6. current stock levels
+select ing.ing_name, inv.quantity, ing.ing_meas
+from inventory inv
+join ingredients ing on ing.ing_id = inv.ing_id;
