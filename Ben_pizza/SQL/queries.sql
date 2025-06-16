@@ -75,3 +75,12 @@ from address a
 join orders o on a.add_id = o.add_id
 group by a.delivery_city;
 
+
+-- STAFF & SHIFT
+--12. Roster for a specific date
+select r.date, s.first_name, s.last_name, sh.day_of_week, sh.start_time, sh.end_time
+from shift sh
+join roster r on r.shift_id = sh.shift_id
+JOIN staff s ON r.staff_id = s.staff_id
+WHERE r.date = '2025-06-10';
+
