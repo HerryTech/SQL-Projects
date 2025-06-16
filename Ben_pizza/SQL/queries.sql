@@ -36,7 +36,15 @@ group by item_name
 order by revenue desc;
 
 --INVENTORY MONITORING
---6. current stock levels
+--6. Current stock levels
 select ing.ing_name, inv.quantity, ing.ing_meas
 from inventory inv
 join ingredients ing on ing.ing_id = inv.ing_id;
+
+--7. Low stock ingredients (less than 5000)
+select ing.ing_name, inv.quantity, ing.ing_meas
+from inventory inv
+join ingredients ing on ing.ing_id = inv.ing_id;
+where inv.quantity < 5000;
+
+
