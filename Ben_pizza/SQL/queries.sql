@@ -35,7 +35,7 @@ where p.pay_status = 'Paid'
 group by item_name
 order by revenue desc;
 
---INVENTORY MONITORING
+-- INVENTORY MONITORING
 --6. Current stock levels
 select ing.ing_name, inv.quantity, ing.ing_meas
 from inventory inv
@@ -44,7 +44,15 @@ join ingredients ing on ing.ing_id = inv.ing_id;
 --7. Low stock ingredients (less than 5000)
 select ing.ing_name, inv.quantity, ing.ing_meas
 from inventory inv
-join ingredients ing on ing.ing_id = inv.ing_id;
+join ingredients ing on ing.ing_id = inv.ing_id
 where inv.quantity < 5000;
+
+-- ORDERS ANALYSIS
+--8. Top 5 most ordered items
+select i.item_name, sum(o.order_id) as total_order
+from items i
+join orders o on o.item_id = i.item_id
+group by i.item_name
+limit 5;
 
 
