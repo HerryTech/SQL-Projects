@@ -2,6 +2,8 @@
 -- 1. List of customers
 Select * from customers;
 
--- Total Orders
-Select Count(o.orders_id) as Total_order
-from orders o;
+--2. Customers who have placed order
+select Distinct c.* 
+from customers c
+JOIN orders o on o.cust_id = c.cust_id;
+
