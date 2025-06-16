@@ -62,4 +62,11 @@ from orders o
 group by Date(created_at)
 order by order_date;
 
+-- ADDRESS & DELIVERY
+--10. Delivered vs. Non-delivered Orders
+select a.delivery, count(*) as total
+from address a
+join orders o on a.add_id = o.add_id
+group by a.delivery;
+
 
