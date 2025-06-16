@@ -12,3 +12,9 @@ select c.cust_id, count(o.order_id) as num_orders
 from customers c
 join orders o on o.cust_id = c.cust_id
 group by c.cust_id; 
+
+-- SALES & REVENUE
+-- 4. Total revenue generated
+select sum(p.amount) as total_revenue
+from payment p
+where pay_status = 'Paid';
