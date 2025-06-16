@@ -18,3 +18,10 @@ group by c.cust_id;
 select sum(p.amount) as total_revenue
 from payment p
 where pay_status = 'Paid';
+
+--4. Daily revenue
+select Date(paid_at) as date, sum(p.amount) as revenue
+from payment p
+where pay_status = 'Paid'
+group by Date(paid_at)
+order by date;
