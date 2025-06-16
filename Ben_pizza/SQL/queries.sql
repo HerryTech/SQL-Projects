@@ -84,3 +84,9 @@ join roster r on r.shift_id = sh.shift_id
 JOIN staff s ON r.staff_id = s.staff_id
 WHERE r.date = '2025-06-10';
 
+--13. Total hours worked per staff (rough estimate)
+select s.first_name, s.last_name, count(r.row_id) as total_shifts
+from staff s
+join roster r on r.staff_id = s.staff_id
+group by s.first_name, s.last_name;
+
