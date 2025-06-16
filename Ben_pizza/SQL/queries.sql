@@ -23,5 +23,14 @@ where pay_status = 'Paid';
 select Date(paid_at) as date, sum(p.amount) as revenue
 from payment p
 where pay_status = 'Paid'
-group by Date(paid_at)
+group by date
 order by date;
+
+--5. Revenue by item
+select i.item_name, sum(p.amount) as revenue
+from orders o
+join items i on o.item_id = i.item_id
+join payment p on o.row_id = p.row_id
+where p.pay_status = 'Paid'
+group by item_name
+order by revenue desc;
