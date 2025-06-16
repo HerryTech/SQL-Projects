@@ -53,6 +53,13 @@ select i.item_name, sum(o.order_id) as total_order
 from items i
 join orders o on o.item_id = i.item_id
 group by i.item_name
+order by total_order desc
 limit 5;
+
+--9. Orders per day
+select Date(created_at) as order_date, count(o.order_id) as total_order
+from orders o
+group by Date(created_at)
+order by order_date;
 
 
