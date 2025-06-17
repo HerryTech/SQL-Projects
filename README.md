@@ -16,6 +16,10 @@ This project stimulates a library system using SQL. Tracks books, borrowers, iss
 **Folder:** [library_management](./library_management)
 
 ### 3. **Ben Pizza**
-_In progress_
+This project simulates a complete ordering and operations database for a pizza business using PostgreSQL. It models customers, orders, inventory, staff scheduling, and supplier relationships. It includes a trigger that automatically updates inventory after every order.
+
+Key insights include sales reports, customer behaviors, ingredient stock levels, top items, and staff shift summaries.
+
+**Folder:** [Ben_pizza](./Ben_pizza)
 
 _More projects will be added soon!_
