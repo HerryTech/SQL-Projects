@@ -5,19 +5,19 @@ This SQL project simulates a real-world ordering system for a pizza business. It
 ## Schema Overview
 
 This project includes 13 relational tables:
-- `customers`: Customer details
-- `address`: Delivery information
-- `items`: Menu items available for order
-- `orders`: Customer purchase data
-- `ingredients`: Raw materials for each item
-- `recipe`: Link between items and ingredients
-- `inventory`: Stock level tracking
-- `staff`: Employee records
-- `shift`: Work hours
-- `roster`: Staff scheduling
-- `payment`: Payment tracking
-- `suppliers`: Vendor data
-- `ingredient_supplier`: Ingredient sourcing
+`customers`: Customer details
+`address`: Delivery information
+`items`: Menu items available for order
+`orders`: Customer purchase data
+`ingredients`: Raw materials for each item
+`recipe`: Link between items and ingredients
+`inventory`: Stock level tracking
+`staff`: Employee records
+`shift`: Work hours
+`roster`: Staff scheduling
+`payment`: Payment tracking
+`suppliers`: Vendor data
+`ingredient_supplier`: Ingredient sourcing
 
 ### Trigger
 A PostgreSQL trigger `trg_update_inventory` automatically updates ingredient stock after every new order.
