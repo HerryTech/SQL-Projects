@@ -37,3 +37,6 @@ OR total_sale IS NULL;
 
 -- How many sales we have?
 SELECT COUNT(*) AS total_sales FROM retail_sales;
+
+-- How many customers we have?
+SELECT COUNT(DISTINCT customer_id) AS total_sales FROM retail_sales;
