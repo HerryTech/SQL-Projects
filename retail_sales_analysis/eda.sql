@@ -49,4 +49,4 @@ SELECT DISTINCT category AS category FROM retail_sales;
 
 -- DATA ANALYSIS & BUISNESS KEY PROBLEMS & ANSWERS
 
--- Retrieve all columns for sales made on 
+-- Retrieve all columns for sales made on 2022-11-05
