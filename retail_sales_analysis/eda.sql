@@ -32,3 +32,5 @@ OR quantiy IS NULL
 OR price_per_unit IS NULL
 OR cogs IS NULL
 OR total_sale IS NULL;
+
+-- DATA EXPLORATION
