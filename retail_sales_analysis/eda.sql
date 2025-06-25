@@ -30,6 +30,3 @@ OR quantiy IS NULL
 OR price_per_unit IS NULL
 OR cogs IS NULL
 OR total_sale IS NULL;
-
--- Confirm if the 3 rows were deleted
-SELECT COUNT(*) FROM retail_sales;
