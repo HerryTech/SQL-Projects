@@ -46,3 +46,5 @@ SELECT COUNT(DISTINCT category) AS category FROM retail_sales;
 
 -- What are the categories we have?
 SELECT DISTINCT category AS category FROM retail_sales;
+
+-- DATA ANALYSIS & BUISNESS KEY PROBLEMS & ANSWERS
