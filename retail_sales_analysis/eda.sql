@@ -34,3 +34,6 @@ OR cogs IS NULL
 OR total_sale IS NULL;
 
 -- DATA EXPLORATION
+
+-- How many sales we have?
+SELECT COUNT(*) AS total_sales FROM retail_sales;
