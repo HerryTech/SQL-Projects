@@ -1,3 +1,5 @@
+--DATA CLEANING
+
 --Check the first 10 dataset
 SELECT * FROM retail_sales
 LIMIT 10; 
