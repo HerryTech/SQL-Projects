@@ -13,4 +13,5 @@ cogs FLOAT,
 total_sale FLOAT
 );
 
-SELECT * FROM retail_sales;
+SELECT * FROM retail_sales
+LIMIT 10; 
