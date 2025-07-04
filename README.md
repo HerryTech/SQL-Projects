@@ -22,4 +22,4 @@ Key insights include sales reports, customer behaviors, ingredient stock levels,
 
 **Folder:** [Ben_pizza](./Ben_pizza)
 
-_More projects will be added soon!_
+_More projects will be added soon!..._
