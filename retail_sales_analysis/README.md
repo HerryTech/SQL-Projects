@@ -24,5 +24,11 @@ The following SQL queries were developed to answer specific business questions:
 - Filter transactions based on category and quantity sold
 - Calculate total sales per category
 - Find the average age of customers by category
+- Identify high-value transactions
+- Transactions by gender and category
+- Average sales per month and identify the best-selling month
+- Top 5 customers by total sales
+
+
 
 
