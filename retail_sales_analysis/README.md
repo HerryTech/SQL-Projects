@@ -12,8 +12,17 @@ This project demonstrates SQL skills and techniques typically used by data analy
 - Database Creation: The project starts by creating a database named `retail_db`.
 - Table Creation: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-2. Data Exploration & Cleaning
+**2. Data Exploration & Cleaning**
 - Record Count: Determine the total number of records in the dataset.
 - Customer Count: Find out how many unique customers are in the dataset.
 - Category Count: Identify all unique product categories in the dataset.
 - Null Value Check: Check for any null values in the dataset and delete records with missing data.
+
+### **3. Data Analysis & Findings**
+The following SQL queries were developed to answer specific business questions:
+- Retrieve sales made on a specific date
+- Filter transactions based on category and quantity sold
+- Calculate total sales per category
+- Find the average age of customers by category
+
+
