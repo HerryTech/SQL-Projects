@@ -35,6 +35,14 @@ The following SQL queries were developed to answer specific business questions:
 * **Sales Trends:** Monthly analysis shows variations in sales, helping identify peak seasons.
 * **Customer Insights:** The analysis identifies the top-spending customers and the most popular product categories.
 
+## Tools Used
+- Excel
+- PostgreSQL
+- Git & GitHub
+
+## Queries
+Stored in `sql` script
+
 
 
 
