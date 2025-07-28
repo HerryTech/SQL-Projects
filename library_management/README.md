@@ -18,7 +18,7 @@ This project simulates a simple Library Management System using PostgreSQL. It i
 ## Tools Used
 - Excel
 - PostgreSQL
-- Git & GitHub
+- GitHub
 
 ## Queries
 Stored in /sql folder
