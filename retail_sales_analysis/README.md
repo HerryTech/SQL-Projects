@@ -38,7 +38,7 @@ The following SQL queries were developed to answer specific business questions:
 ## Tools Used
 - Excel
 - PostgreSQL
-- Git & GitHub
+- GitHub
 
 ## Queries
 Stored in `sql` script
