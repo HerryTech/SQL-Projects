@@ -9,8 +9,7 @@ SELECT COUNT(*) FROM retail_sales;
 
 --Check for null values in all columns
 SELECT * FROM retail_sales
-WHERE
-transactions_id IS NULL 
+WHERE transactions_id IS NULL 
 OR sale_date IS NULL
 OR sale_time IS NULL
 OR customer_id IS NULL
