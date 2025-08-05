@@ -53,8 +53,8 @@ SELECT DISTINCT category AS category FROM retail_sales;
 SELECT * FROM retail_sales
 WHERE sale_date = '2022-11-05';
 
--- 2. Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022
+-- 2. Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022
 SELECT * FROM retail_sales
 WHERE category = 'Clothing'
-AND quantity > 10
+AND quantity > 4
 AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
