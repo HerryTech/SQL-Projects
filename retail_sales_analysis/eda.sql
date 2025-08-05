@@ -57,4 +57,4 @@ WHERE sale_date = '2022-11-05';
 SELECT * FROM retail_sales
 WHERE category = "Clothing"
 AND quantity > 10
-AND 
+AND TO_CHAR(sale_date, 'YYYY-MM') = "2022-11"
