@@ -65,3 +65,5 @@ COUNT(*) AS total_order,
 SUM(total_sale) AS total_sales
 FROM retail_sales
 GROUP BY 1;
+
+-- 4. Find the average age of customers who purchased items from the 'Beauty' category.
