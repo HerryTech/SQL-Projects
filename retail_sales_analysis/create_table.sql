@@ -1,4 +1,5 @@
 -- Create Table
+DROP TABLE IF EXISTS retail_sales;
 CREATE TABLE retail_sales(
     transactions_id INT PRIMARY KEY,
     sale_date DATE,
