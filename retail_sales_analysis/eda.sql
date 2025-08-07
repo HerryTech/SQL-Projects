@@ -59,7 +59,7 @@ WHERE category = 'Clothing'
 AND quantity > 4
 AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
 
--- 3. Calculate the total sales for each category.
+-- 3. Calculate the total order and total sales for each category.
 SELECT category, SUM(total_sale) AS total_sales 
 FROM retail_sales
 GROUP BY 1;
