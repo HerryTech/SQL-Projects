@@ -61,7 +61,7 @@ AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11';
 
 -- 3. Calculate the total order and total sales for each category.
 SELECT category,
-COUNT(*) AS total_order 
+COUNT(*) AS total_order,
 SUM(total_sale) AS total_sales
 FROM retail_sales
 GROUP BY 1;
