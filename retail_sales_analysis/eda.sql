@@ -67,3 +67,6 @@ FROM retail_sales
 GROUP BY 1;
 
 -- 4. Find the average age of customers who purchased items from the 'Beauty' category.
+SELECT category, AVERAGE(age) AS average_age
+FROM retail_sales,
+WHERE category = 'Beauty'
