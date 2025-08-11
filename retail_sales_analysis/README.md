@@ -41,7 +41,7 @@ The following SQL queries were developed to answer specific business questions:
 - GitHub
 
 ## Queries
-Stored in `sql` script
+Stored in `sql` script.
 
 
 
