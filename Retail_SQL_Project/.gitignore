@@ -2,3 +2,7 @@
 ~$*
 *.tmp
 *.bak
+
+# Ignore raw dataset files
+CSV/
+*.csv
