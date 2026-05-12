@@ -12,3 +12,8 @@ CREATE TABLE retail.stores(
 	store_id INT PRIMARY KEY,
 	city VARCHAR(20)
 );
+
+CREATE TABLE retail.promotions(
+	promotion_id INT PRIMARY KEY,
+	discount INT
+);
