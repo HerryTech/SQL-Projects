@@ -4,5 +4,5 @@
 *.bak
 
 # Ignore raw dataset files
-CSV/
+Dataset/CSV/
 *.csv
