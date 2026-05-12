@@ -3,12 +3,12 @@ CREATE TABLE retail.categories(
 	category_name VARCHAR(20)
 );
 
-CREATE TABLE retail.suppliers (
+CREATE TABLE retail.suppliers(
 	supplier_id INT PRIMARY KEY,
 	country VARCHAR(20)
 );
 
-CREATE TABLE retail.stores (
+CREATE TABLE retail.stores(
 	store_id INT PRIMARY KEY,
 	city VARCHAR(20)
 );
