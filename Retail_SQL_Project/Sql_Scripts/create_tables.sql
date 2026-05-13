@@ -18,7 +18,7 @@ CREATE TABLE retail.promotions(
 	discount NUMERIC(5,2)
 );
 
-CREATE TABLE retial.customers(
+CREATE TABLE retail.customers(
 	customer_id INT PRIMARY KEY,
 	city VARCHAR(20),
 	signup_date DATE
