@@ -104,3 +104,13 @@ CREATE TABLE retail.shipments(
 		FOREIGN KEY(order_id)
 		REFERENCES retail.orders(order_id)
 )
+
+CREATE TABLE retail.returns(
+	return_id INT PRIMARY KEY,
+	order_item_id INT,
+	refund NUMERIC(10,2),
+
+	CONSTRAINT fk_return_order_item
+		FOREIGN KEY(order_item_id)
+		REFERENCE retail.order_items(order_item_id)
+)
