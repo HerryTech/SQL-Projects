@@ -39,3 +39,12 @@ CREATE TABLE retail.products(
 		REFERENCES retail.suppliers(supplier_id)
 )
 
+CREATE TABLE retail.employees(
+	employee_id INT PRIMARY KEY,
+	store_id INT,
+	salary NUMERIC(10,2),
+
+	CONSTRAINT fk_store
+		FOREIGN KEY(store_id)
+		REFERENCES retail.stores(store_id)
+)
