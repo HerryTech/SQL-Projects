@@ -84,3 +84,13 @@ CREATE TABLE retail.order_items(
 		FOREIGN KEY(product_id)
 		REFERENCES retail.products(product_id)
 )
+
+CREATE TABLE retail.payments(
+	payment_id INT PRIMARY KEY,
+	order_id INT
+	amount NUMERIC(10,2),
+
+	CONSTRAINT fk_order_payment
+		FOREIGN KEY(order_id)
+		REFERENCES retail.orders(order_id)
+)
