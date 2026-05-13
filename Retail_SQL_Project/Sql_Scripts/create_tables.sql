@@ -68,3 +68,19 @@ CREATE TABLE retail.orders(
 		FOREIGN KEY (promotion_id)
         REFERENCES retail.promotions(promotion_id)
 )
+
+CREATE TABLE retail.order_items(
+	order_item_id INT PRIMARY KEY,
+	order_id INT,
+	product_id INT,
+	qty INT,
+	price NUMERIC(10,2),
+
+	CONSTRAINT fk_order
+		FOREIGN KEY(order_id)
+		REFERENCES retail.orders(order_id),
+
+	CONSTRAINT fk_product
+		FOREIGN KEY(product_id)
+		REFERENCES retail.products(product_id)
+)
