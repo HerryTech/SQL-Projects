@@ -15,7 +15,7 @@ CREATE TABLE retail.stores(
 
 CREATE TABLE retail.promotions(
 	promotion_id INT PRIMARY KEY,
-	discount INT
+	discount NUMERIC(5,2)
 );
 
 CREATE TABLE retial.customers(
