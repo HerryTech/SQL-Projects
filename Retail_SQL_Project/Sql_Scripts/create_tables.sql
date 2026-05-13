@@ -22,7 +22,7 @@ CREATE TABLE retail.customers(
 	customer_id INT PRIMARY KEY,
 	city VARCHAR(20),
 	signup_date DATE
-)
+);
 
 CREATE TABLE retail.products(
 	product_id INT PRIMARY KEY,
@@ -37,7 +37,7 @@ CREATE TABLE retail.products(
 	CONSTRAINT fk_supplier
 		FOREIGN KEY(supplier_id)
 		REFERENCES retail.suppliers(supplier_id)
-)
+);
 
 CREATE TABLE retail.employees(
 	employee_id INT PRIMARY KEY,
@@ -47,7 +47,7 @@ CREATE TABLE retail.employees(
 	CONSTRAINT fk_store_employee
 		FOREIGN KEY(store_id)
 		REFERENCES retail.stores(store_id)
-)
+);
 
 CREATE TABLE retail.orders(
 	order_id INT PRIMARY KEY,
@@ -67,7 +67,7 @@ CREATE TABLE retail.orders(
 	CONSTRAINT fk_promotion
 		FOREIGN KEY (promotion_id)
         REFERENCES retail.promotions(promotion_id)
-)
+);
 
 CREATE TABLE retail.order_items(
 	order_item_id INT PRIMARY KEY,
@@ -83,17 +83,17 @@ CREATE TABLE retail.order_items(
 	CONSTRAINT fk_product
 		FOREIGN KEY(product_id)
 		REFERENCES retail.products(product_id)
-)
+);
 
 CREATE TABLE retail.payments(
 	payment_id INT PRIMARY KEY,
-	order_id INT
+	order_id INT,
 	amount NUMERIC(10,2),
 
 	CONSTRAINT fk_payment_order
 		FOREIGN KEY(order_id)
 		REFERENCES retail.orders(order_id)
-)
+);
 
 CREATE TABLE retail.shipments(
 	shipment_id INT PRIMARY KEY,
@@ -103,7 +103,7 @@ CREATE TABLE retail.shipments(
 	CONSTRAINT fk_shipment_order
 		FOREIGN KEY(order_id)
 		REFERENCES retail.orders(order_id)
-)
+);
 
 CREATE TABLE retail.returns(
 	return_id INT PRIMARY KEY,
@@ -112,5 +112,5 @@ CREATE TABLE retail.returns(
 
 	CONSTRAINT fk_return_order_item
 		FOREIGN KEY(order_item_id)
-		REFERENCE retail.order_items(order_item_id)
-)
+		REFERENCES retail.order_items(order_item_id)
+);
