@@ -90,7 +90,17 @@ CREATE TABLE retail.payments(
 	order_id INT
 	amount NUMERIC(10,2),
 
-	CONSTRAINT fk_order_payment
+	CONSTRAINT fk_payment_order
+		FOREIGN KEY(order_id)
+		REFERENCES retail.orders(order_id)
+)
+
+CREATE TABLE retail.shipments(
+	shipment_id INT PRIMARY KEY,
+	order_id INT,
+	status VARCHAR(20),
+
+	CONSTRAINT fk_shipment_order
 		FOREIGN KEY(order_id)
 		REFERENCES retail.orders(order_id)
 )
