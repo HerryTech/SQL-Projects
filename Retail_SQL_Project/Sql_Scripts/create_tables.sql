@@ -44,7 +44,27 @@ CREATE TABLE retail.employees(
 	store_id INT,
 	salary NUMERIC(10,2),
 
-	CONSTRAINT fk_store
+	CONSTRAINT fk_store_employee
 		FOREIGN KEY(store_id)
 		REFERENCES retail.stores(store_id)
+)
+
+CREATE TABLE retail.orders(
+	order_id INT PRIMARY KEY,
+	customer_id INT,
+	store_id INT,
+	order_date DATE,
+	promotion_id INT,
+
+	CONSTRAINT fk_customer
+		FOREIGN KEY(customer_id)
+		REFERENCES retail.customers(customer_id),
+
+	CONSTRAINT fk_store_order
+		FOREIGN KEY(store_id)
+		REFERENCES retail.stores(store_id),
+
+	CONSTRAINT fk_promotion
+		FOREIGN KEY (promotion_id)
+        REFERENCES retail.promotions(promotion_id)
 )
