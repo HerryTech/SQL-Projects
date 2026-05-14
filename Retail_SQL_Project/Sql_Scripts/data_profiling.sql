@@ -1,3 +1,4 @@
+-- check for row counts
 SELECT 'categories' AS table_name, COUNT(*) FROM retail.categories
 UNION ALL
 SELECT 'customers', COUNT(*) FROM retail.customers
@@ -22,6 +23,7 @@ SELECT 'employees', COUNT(*) FROM retail.employees
 UNION ALL
 SELECT 'promotions', COUNT(*) FROM retail.promotions;
 
+-- check for duplicates
 SELECT order_id, COUNT(*) AS duplicate_count FROM retail.orders
 GROUP BY order_id
 HAVING COUNT(*) > 1;
