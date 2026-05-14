@@ -10,4 +10,5 @@ JOIN retail.products p
 	ON 	oi.product_id = p.product_id
 JOIN retail.categories c
 	ON p.category_id = c.category_id
-GROUP BY c.category_name;
+GROUP BY c.category_name
+ORDER BY total_sales DESC;
