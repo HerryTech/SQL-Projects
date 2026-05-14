@@ -9,4 +9,5 @@ FROM retail.order_items oi
 JOIN retail.products p
 	ON 	oi.product_id = p.product_id
 JOIN retail.categories c
-	ON p.category_id = c.category_id;
+	ON p.category_id = c.category_id
+GROUP BY c.category_name;
