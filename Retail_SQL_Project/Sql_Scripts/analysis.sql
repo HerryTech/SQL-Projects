@@ -8,3 +8,5 @@ SELECT c.category_name, (oi.qty * oi.price) AS total_sales
 FROM retail.order_items oi
 JOIN retail.products p
 	ON 	oi_product_id = p.product_id
+JOIN retail.category c
+	ON p.category_id = c.category_id
