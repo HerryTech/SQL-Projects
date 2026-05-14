@@ -24,6 +24,84 @@ UNION ALL
 SELECT 'promotions', COUNT(*) FROM retail.promotions;
 
 -- check for duplicates
-SELECT order_id, COUNT(*) AS duplicate_count FROM retail.orders
-GROUP BY order_id
-HAVING COUNT(*) > 1;
+SELECT 
+    'categories' AS table_name,
+    COUNT(*) - COUNT(DISTINCT category_id) AS duplicate_count
+FROM retail.categories
+
+UNION ALL
+
+SELECT 
+    'customers',
+    COUNT(*) - COUNT(DISTINCT customer_id)
+FROM retail.customers
+
+UNION ALL
+
+SELECT 
+    'orders',
+    COUNT(*) - COUNT(DISTINCT order_id)
+FROM retail.orders
+
+UNION ALL
+
+SELECT 
+    'order_items',
+    COUNT(*) - COUNT(DISTINCT order_item_id)
+FROM retail.order_items
+
+UNION ALL
+
+SELECT 
+    'products',
+    COUNT(*) - COUNT(DISTINCT product_id)
+FROM retail.products
+
+UNION ALL
+
+SELECT 
+    'suppliers',
+    COUNT(*) - COUNT(DISTINCT supplier_id)
+FROM retail.suppliers
+
+UNION ALL
+
+SELECT 
+    'stores',
+    COUNT(*) - COUNT(DISTINCT store_id)
+FROM retail.stores
+
+UNION ALL
+
+SELECT 
+    'employees',
+    COUNT(*) - COUNT(DISTINCT employee_id)
+FROM retail.employees
+
+UNION ALL
+
+SELECT 
+    'promotions',
+    COUNT(*) - COUNT(DISTINCT promotion_id)
+FROM retail.promotions
+
+UNION ALL
+
+SELECT 
+    'payments',
+    COUNT(*) - COUNT(DISTINCT payment_id)
+FROM retail.payments
+
+UNION ALL
+
+SELECT 
+    'shipments',
+    COUNT(*) - COUNT(DISTINCT shipment_id)
+FROM retail.shipments
+
+UNION ALL
+
+SELECT 
+    'returns',
+    COUNT(*) - COUNT(DISTINCT return_id)
+FROM retail.returns;
