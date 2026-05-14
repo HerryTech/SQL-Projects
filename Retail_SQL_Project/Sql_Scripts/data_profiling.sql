@@ -21,3 +21,7 @@ UNION ALL
 SELECT 'employees', COUNT(*) FROM retail.employees
 UNION ALL
 SELECT 'promotions', COUNT(*) FROM retail.promotions;
+
+SELECT order_id, COUNT(*) AS duplicate_count FROM retail.orders
+GROUP BY order_id
+HAVING COUNT(*) > 1;
