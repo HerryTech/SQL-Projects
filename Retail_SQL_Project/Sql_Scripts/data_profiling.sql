@@ -105,3 +105,38 @@ SELECT
     'returns',
     COUNT(*) - COUNT(DISTINCT return_id)
 FROM retail.returns;
+
+-- Check for missng values
+SELECT
+    'customers' AS table_name,
+    COUNT(*) AS total_rows,
+    COUNT(city) AS non_null_city,
+    COUNT(signup_date) AS non_null_signup_date
+FROM retail.customers
+
+UNION ALL
+
+SELECT
+    'orders',
+    COUNT(*),
+    COUNT(customer_id),
+    COUNT(store_id)
+FROM retail.orders
+
+UNION ALL
+
+SELECT
+    'products',
+    COUNT(*),
+    COUNT(category_id),
+    COUNT(supplier_id)
+FROM retail.products
+
+UNION ALL
+
+SELECT
+    'order_items',
+    COUNT(*),
+    COUNT(order_id),
+    COUNT(product_id)
+FROM retail.order_items;
