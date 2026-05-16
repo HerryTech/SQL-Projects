@@ -24,3 +24,10 @@ GROUP BY s.store_id, s.city
 ORDER BY total_revenue DESC;
 
 --Top 10 Products by Revenue
+SELECT p.product_id, SUM(oi.qty * oi.price) AS total_revenue
+FROM retail.order_items oi
+JOIN retail.products p
+	ON oi.product_id = p.product_id
+GROUP BY product_id
+ORDER BY total_revenue DESC
+LIMIT 10;
