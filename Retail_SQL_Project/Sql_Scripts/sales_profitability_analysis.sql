@@ -28,6 +28,6 @@ SELECT p.product_id, SUM(oi.qty * oi.price) AS total_revenue
 FROM retail.order_items oi
 JOIN retail.products p
 	ON oi.product_id = p.product_id
-GROUP BY product_id
+GROUP BY p.product_id
 ORDER BY total_revenue DESC
 LIMIT 10;
