@@ -37,6 +37,13 @@ SELECT
 FROM retail.orders;
 
 SELECT
+    customer_id,
+    COUNT(order_id) AS total_orders
+FROM retail.orders
+GROUP BY customer_id
+ORDER BY total_orders DESC;
+
+SELECT
     c.customer_id,
     COUNT(DISTINCT o.order_id) AS total_orders
 FROM retail.customers c
