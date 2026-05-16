@@ -31,3 +31,8 @@ JOIN retail.products p
 GROUP BY p.product_id
 ORDER BY total_revenue DESC
 LIMIT 10;
+
+--Average Order Value
+SELECT
+    SUM(qty * price) / COUNT(DISTINCT order_id) AS average_order_value
+FROM retail.order_items;
