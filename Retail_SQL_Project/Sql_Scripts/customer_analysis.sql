@@ -30,3 +30,12 @@ JOIN retail.orders o
 	ON oi.order_id = o.order_id
 JOIN retail.customers c
 	ON o.customer_id = c.customer_id;
+
+-- Customer Order Frequency
+SELECT 
+	COUNT(oi.order_id) / COUNT(DISTINCT c.customer_id) AS customer_order_freq
+FROM retail.order_items oi
+JOIN retail.orders o
+	ON oi.order_id = o.order_id
+JOIN retail.customers c
+	ON o.customer_id = c.customer_id;
