@@ -21,3 +21,12 @@ JOIN retail.customers c
 GROUP BY c.customer_id
 ORDER BY total_revenue
 LIMIT 10;
+
+-- AVerage Customer Spend
+SELECT 
+	SUM(oi.qty * oi.price) / COUNT(DISTINCT c.customer_id) AS average_customer_spend
+FROM retail.order_items oi
+JOIN retail.orders o
+	ON oi.order_id = o.order_id
+JOIN retail.customers c
+	ON o.customer_id = c.customer_id;
