@@ -18,7 +18,7 @@ SELECT 'store' AS table_name, SUM(oi.qty * oi.price) AS total_revenue
 FROM retail.order_items oi
 JOIN retail.orders o
 	ON oi.order_id = o.order_id
-JOIN retails.stores s
+JOIN retail.stores s
 	ON o.store_id = s.store_id
 GROUP BY s.store_id
 ORDER BY total_revenue DESC;
