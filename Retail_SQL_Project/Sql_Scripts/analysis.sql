@@ -3,8 +3,8 @@ SELECT
 	SUM(qty * price) AS total_revenue
 	FROM retail.order_items;
 
--- Sales by category
-SELECT c.category_name, SUM(oi.qty * oi.price) AS total_sales
+-- Revenue by Category
+SELECT c.category_name, SUM(oi.qty * oi.price) AS total_revenue
 FROM retail.order_items oi
 JOIN retail.products p
 	ON 	oi.product_id = p.product_id
