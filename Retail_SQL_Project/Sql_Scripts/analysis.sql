@@ -11,10 +11,10 @@ JOIN retail.products p
 JOIN retail.categories c
 	ON p.category_id = c.category_id
 GROUP BY c.category_name
-ORDER BY total_sales DESC;
+ORDER BY total_revenue DESC;
 
 -- Revenue by Store
-SELECT 'store' AS table_name, SUM(oi.qty * oi.price) AS total_revenue
+SELECT s.store_id AS table_name, SUM(oi.qty * oi.price) AS total_revenue
 FROM retail.order_items oi
 JOIN retail.orders o
 	ON oi.order_id = o.order_id
