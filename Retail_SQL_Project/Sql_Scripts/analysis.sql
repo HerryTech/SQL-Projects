@@ -14,11 +14,11 @@ GROUP BY c.category_name
 ORDER BY total_revenue DESC;
 
 -- Revenue by Store
-SELECT s.store_id, SUM(oi.qty * oi.price) AS total_revenue
+SELECT s.store_id, s.city, SUM(oi.qty * oi.price) AS total_revenue
 FROM retail.order_items oi
 JOIN retail.orders o
 	ON oi.order_id = o.order_id
 JOIN retail.stores s
 	ON o.store_id = s.store_id
-GROUP BY s.store_id
+GROUP BY s.store_id, s.city
 ORDER BY total_revenue DESC;
