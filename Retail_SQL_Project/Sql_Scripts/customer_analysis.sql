@@ -33,7 +33,7 @@ JOIN retail.customers c
 
 -- Customer Order Frequency
 SELECT
-    COUNT(order_id) * 1.0 / COUNT(DISTINCT customer_id) AS order_frequency
+    COUNT(order_id) / COUNT(DISTINCT customer_id) AS order_frequency
 FROM retail.orders;
 
 SELECT
