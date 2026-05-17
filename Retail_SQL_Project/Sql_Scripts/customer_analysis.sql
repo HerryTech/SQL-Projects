@@ -39,3 +39,8 @@ FROM retail.orders
 GROUP BY customer_id
 ORDER BY total_orders DESC;
 
+SELECT 
+	COUNT(order_id) / COUNT(DISTINCT customer_id) AS customer_order_freq
+FROM retail.orders;
+
+-- Customer Signup Trend
