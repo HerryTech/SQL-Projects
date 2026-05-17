@@ -42,7 +42,7 @@ ORDER BY total_orders DESC;
 -- Customer Signup Trend
 SELECT
 	EXTRACT(YEAR FROM signup_date) AS signup_year,
-	COUNT(customer_id)
+	COUNT(customer_id) AS total_customers
 FROM retail.customers
 GROUP BY signup_year
 ORDER BY signup_year;
