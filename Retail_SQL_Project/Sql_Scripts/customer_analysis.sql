@@ -44,10 +44,6 @@ SELECT
 	EXTRACT(YEAR FROM signup_date) AS signup_year,
 	COUNT(customer_id) AS total_customers
 FROM retail.customers
-GROUP BY signup_year,
+GROUP BY signup_year
 ORDER BY signup_year;
-
-SELECT
-    TO_CHAR(order_date, 'Mon') AS month_name
-FROM retail.orders;
 
