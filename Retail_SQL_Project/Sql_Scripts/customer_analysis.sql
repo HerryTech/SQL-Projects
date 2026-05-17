@@ -47,3 +47,17 @@ FROM retail.customers
 GROUP BY signup_year
 ORDER BY signup_year;
 
+-- Customers with No Order
+SELECT
+    o.customer_id
+FROM retail.orders o
+JOIN retail.customers c
+    ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
+
+SELECT
+    c.customer_id
+FROM retail.customers c
+LEFT JOIN retail.orders o
+    ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
