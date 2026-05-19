@@ -57,3 +57,17 @@ GROUP BY p.product_id
 ORDER BY total_returns DESC
 LIMIT 10;
 
+-- Customers with Highest Returns
+SELECT
+	c.customer_id,
+	COUNT(r.return_id) AS total_returns
+FROM retail.returns r
+JOIN retail.order_items oi
+    ON r.order_item_id = oi.order_item_id
+JOIN retail.orders o
+    ON oi.order_id = o.order_id
+JOIN retail.customers c
+	ON o.customer_id = c.customer_id
+GROUP BY c.customer_id
+ORDER BY total_returns DESC;
+--LIMIT 5;
