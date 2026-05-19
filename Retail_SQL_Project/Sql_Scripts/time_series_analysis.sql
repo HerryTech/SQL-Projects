@@ -28,6 +28,7 @@ SELECT
     - LAG(total_revenue) OVER (ORDER BY order_year) AS revenue_growth
 FROM yearly_sales;
 
+--Running Total Revenue
 SELECT
     o.order_date,
     SUM(oi.qty * oi.price) AS daily_revenue,
