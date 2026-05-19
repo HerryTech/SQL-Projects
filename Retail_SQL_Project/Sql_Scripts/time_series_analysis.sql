@@ -9,6 +9,7 @@ JOIN retail.order_items oi
 GROUP BY order_year, order_month
 ORDER BY order_year, order_month;
 
+-- Yearly Growth Revenue
 WITH yearly_sales AS (
     SELECT
         EXTRACT(YEAR FROM o.order_date) AS order_year,
