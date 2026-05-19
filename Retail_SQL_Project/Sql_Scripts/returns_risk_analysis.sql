@@ -53,6 +53,7 @@ JOIN retail.order_items oi
     ON r.order_item_id = oi.order_item_id
 JOIN retail.products p
     ON oi.product_id = p.product_id
+GROUP BY p.product_id
 ORDER BY total_returns DESC
 LIMIT 10;
 
