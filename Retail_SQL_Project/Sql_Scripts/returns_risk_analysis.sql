@@ -44,3 +44,15 @@ JOIN retail.categories c
 GROUP BY c.category_name
 ORDER BY total_refund DESC;
 
+-- Top 10 Most Returned Products
+SELECT
+    p.product_id,
+    COUNT(r.return_id) AS total_returns
+FROM retail.returns r
+JOIN retail.order_items oi
+    ON r.order_item_id = oi.order_item_id
+JOIN retail.products p
+    ON oi.product_id = p.product_id
+ORDER BY total_returns DESC
+LIMIT 10;
+
