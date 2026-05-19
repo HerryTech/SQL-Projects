@@ -39,3 +39,17 @@ JOIN retail.order_items oi
     ON o.order_id = oi.order_id
 GROUP BY o.order_date
 ORDER BY o.order_date;
+
+SELECT
+    s.store_id,
+    s.city,
+    SUM(oi.qty * oi.price) AS total_revenue,
+    RANK() OVER (
+        ORDER BY SUM(oi.qty * oi.price) DESC
+    ) AS revenue_rank
+FROM retail.orders o
+JOIN retail.order_items oi
+    ON o.order_id = oi.order_id
+JOIN retail.stores s
+    ON o.store_id = s.store_id
+GROUP BY s.store_id, s.city;
