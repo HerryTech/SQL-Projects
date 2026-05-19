@@ -10,7 +10,10 @@ FROM retail.returns;
 
 --Return Rate
 SELECT
-	COUNT(r.order_item_id) / COUNT(oi.order_item_id) AS return_rate
+	COUNT(DISTINCT r.order_item_id) * 100.0 
+	/ COUNT(DISTINCT oi.order_item_id) AS return_rate
 FROM retail.order_items oi
 LEFT JOIN retail.returns r
 	ON r.order_item_id = oi.order_item_id;
+
+
