@@ -70,3 +70,18 @@ JOIN retail.customers c
 	ON o.customer_id = c.customer_id
 GROUP BY c.customer_id
 ORDER BY total_returns DESC;
+
+-- Return Rate by Promotion
+SELECT
+    p.promotion_id,
+    COUNT(DISTINCT r.order_item_id) * 100.0
+    / COUNT(DISTINCT oi.order_item_id) AS return_rate_percentage
+FROM retail.orders o
+JOIN retail.order_items oi
+    ON o.order_id = oi.order_id
+LEFT JOIN retail.returns r
+    ON oi.order_item_id = r.order_item_id
+JOIN retail.promotions p
+    ON o.promotion_id = p.promotion_id
+GROUP BY p.promotion_id
+ORDER BY return_rate_percentage DESC;
