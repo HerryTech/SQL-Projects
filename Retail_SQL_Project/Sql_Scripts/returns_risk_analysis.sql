@@ -70,4 +70,3 @@ JOIN retail.customers c
 	ON o.customer_id = c.customer_id
 GROUP BY c.customer_id
 ORDER BY total_returns DESC;
---LIMIT 5;
