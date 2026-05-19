@@ -7,3 +7,10 @@ FROM retail.returns;
 SELECT 
 	SUM(refund) AS total_refund
 FROM retail.returns;
+
+--Return Rate
+SELECT
+	COUNT(r.return_id) / COUNT(r.order_item_id)
+FROM retail.returns r
+JOIN retail.order_items oi
+	ON r.order_item_id = oi.order_item_id;
