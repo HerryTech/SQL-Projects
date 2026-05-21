@@ -55,6 +55,7 @@ JOIN retail.stores s
     ON o.store_id = s.store_id
 GROUP BY s.store_id, s.city;
 
+-- Top Customers by Spending
 SELECT
     c.customer_id,
     SUM(oi.qty * oi.price) AS total_spent,
