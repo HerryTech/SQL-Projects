@@ -18,3 +18,16 @@ SELECT
         2
     ) AS shipment_success_rate
 FROM retail.shipments;
+
+--Revenue by Supplier
+SELECT
+    s.supplier_id,
+    s.country,
+    SUM(oi.qty * oi.price) AS total_revenue
+FROM retail.suppliers s
+JOIN retail.products p
+    ON s.supplier_id = p.supplier_id
+JOIN retail.order_items oi
+    ON p.product_id = oi.product_id
+GROUP BY s.supplier_id, s.country
+ORDER BY total_revenue DESC;
