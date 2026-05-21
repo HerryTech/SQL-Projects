@@ -31,3 +31,16 @@ JOIN retail.order_items oi
     ON p.product_id = oi.product_id
 GROUP BY s.supplier_id, s.country
 ORDER BY total_revenue DESC;
+
+SELECT
+    s.supplier_id,
+    COUNT(r.return_id) AS total_returns
+FROM retail.suppliers s
+JOIN retail.products p
+    ON s.supplier_id = p.supplier_id
+JOIN retail.order_items oi
+    ON p.product_id = oi.product_id
+LEFT JOIN retail.returns r
+    ON oi.order_item_id = r.order_item_id
+GROUP BY s.supplier_id
+ORDER BY total_returns DESC;
