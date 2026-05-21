@@ -71,3 +71,20 @@ JOIN retail.shipments sh
     ON o.order_id = sh.order_id
 GROUP BY s.store_id, sh.status
 ORDER BY s.store_id;
+
+SELECT
+    s.supplier_id,
+    ROUND(
+        COUNT(DISTINCT r.order_item_id) * 100.0
+        / COUNT(DISTINCT oi.order_item_id),
+        2
+    ) AS return_rate_percentage
+FROM retail.suppliers s
+JOIN retail.products p
+    ON s.supplier_id = p.supplier_id
+JOIN retail.order_items oi
+    ON p.product_id = oi.product_id
+LEFT JOIN retail.returns r
+    ON oi.order_item_id = r.order_item_id
+GROUP BY s.supplier_id
+ORDER BY return_rate_percentage DESC;
