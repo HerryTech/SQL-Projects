@@ -84,6 +84,7 @@ JOIN retail.order_items oi
 GROUP BY o.order_date
 ORDER BY o.order_date;
 
+-- Monthly Revenue Contribution Percentage
 WITH monthly_sales AS (
     SELECT
         EXTRACT(YEAR FROM o.order_date) AS order_year,
