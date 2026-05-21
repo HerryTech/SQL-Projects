@@ -45,3 +45,16 @@ LEFT JOIN retail.returns r
     ON oi.order_item_id = r.order_item_id
 GROUP BY s.supplier_id
 ORDER BY total_returns DESC;
+
+-- Shipment Volume by Store
+SELECT
+    s.store_id,
+    s.city,
+    COUNT(sh.shipment_id) AS total_shipments
+FROM retail.stores s
+JOIN retail.orders o
+    ON s.store_id = o.store_id
+JOIN retail.shipments sh
+    ON o.order_id = sh.order_id
+GROUP BY s.store_id, s.city
+ORDER BY total_shipments DESC;
