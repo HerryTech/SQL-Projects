@@ -69,6 +69,7 @@ JOIN retail.order_items oi
     ON o.order_id = oi.order_id
 GROUP BY c.customer_id;
 
+-- Moving Average Revenue
 SELECT
     o.order_date,
     SUM(oi.qty * oi.price) AS daily_revenue,
