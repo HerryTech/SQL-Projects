@@ -53,13 +53,14 @@ The model is structured using primary and foreign key relationships with order_i
 
 ## Key Analysis Areas
 Sales and Profitability
-Total revenue analysis
-Product and category performance
-Store level performance
-Average order value
+- Total revenue analysis
+- Product and category performance
+- Store level performance
+- Average order value
+
 Customer Analysis
-Customer segmentation
-Purchase frequency
+- Customer segmentation
+- Purchase frequency
 Top customers by revenue
 Customer retention signals
 Returns and Risk
