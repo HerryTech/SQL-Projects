@@ -72,6 +72,7 @@ JOIN retail.shipments sh
 GROUP BY s.store_id, sh.status
 ORDER BY s.store_id;
 
+-- Return Rate by Supplier
 SELECT
     s.supplier_id,
     ROUND(
