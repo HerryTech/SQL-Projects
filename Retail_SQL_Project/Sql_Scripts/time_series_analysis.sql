@@ -68,3 +68,17 @@ JOIN retail.orders o
 JOIN retail.order_items oi
     ON o.order_id = oi.order_id
 GROUP BY c.customer_id;
+
+SELECT
+    o.order_date,
+    SUM(oi.qty * oi.price) AS daily_revenue,
+    AVG(SUM(oi.qty * oi.price))
+    OVER (
+        ORDER BY o.order_date
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) AS moving_average_7_days
+FROM retail.orders o
+JOIN retail.order_items oi
+    ON o.order_id = oi.order_id
+GROUP BY o.order_date
+ORDER BY o.order_date;
