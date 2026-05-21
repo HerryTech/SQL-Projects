@@ -58,3 +58,15 @@ JOIN retail.shipments sh
     ON o.order_id = sh.order_id
 GROUP BY s.store_id, s.city
 ORDER BY total_shipments DESC;
+
+SELECT
+    s.store_id,
+    sh.status,
+    COUNT(sh.shipment_id) AS shipment_count
+FROM retail.stores s
+JOIN retail.orders o
+    ON s.store_id = o.store_id
+JOIN retail.shipments sh
+    ON o.order_id = sh.order_id
+GROUP BY s.store_id, sh.status
+ORDER BY s.store_id;
