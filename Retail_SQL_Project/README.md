@@ -19,37 +19,39 @@ The organization lacked a centralized view of performance across sales, profitab
 This project addresses these gaps through structured SQL analysis.
 
 ## Project Objectives
-Build a normalized relational database structure
-Perform sales and profitability analysis
-Analyze customer behavior and segmentation
-Evaluate return patterns and financial risk
-Assess supply chain and supplier performance
-Perform time series and trend analysis using SQL
-Provide actionable business insights
-Database Design
+- Build a normalized relational database structure
+- Perform sales and profitability analysis
+- Analyze customer behavior and segmentation
+- Evaluate return patterns and financial risk
+- Assess supply chain and supplier performance
+- Perform time series and trend analysis using SQL
+- Provide actionable business insights
+
+## Database Design
 
 The database follows a relational model with 12 tables:
 
-customers
-orders
-order_items
-products
-categories
-suppliers
-stores
-employees
-promotions
-payments
-shipments
-returns
+- customers
+- orders
+- order_items
+- products
+- categories
+- suppliers
+- stores
+- employees
+- promotions
+- payments
+- shipments
+- returns
 
 The model is structured using primary and foreign key relationships with order_items and orders serving as core transactional tables.
 
-Tools Used
-PostgreSQL
-SQL
-pgAdmin
-Key Analysis Areas
+## Tools Used
+- PostgreSQL
+- SQL
+- pgAdmin
+
+## Key Analysis Areas
 Sales and Profitability
 Total revenue analysis
 Product and category performance
