@@ -40,6 +40,7 @@ JOIN retail.order_items oi
 GROUP BY o.order_date
 ORDER BY o.order_date;
 
+-- Top Performing Stores
 SELECT
     s.store_id,
     s.city,
