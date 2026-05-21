@@ -107,3 +107,4 @@ SELECT
     ) AS revenue_contribution_percentage
 FROM monthly_sales
 ORDER BY order_year, order_month;
+
