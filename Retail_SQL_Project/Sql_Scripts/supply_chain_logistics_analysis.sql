@@ -59,6 +59,7 @@ JOIN retail.shipments sh
 GROUP BY s.store_id, s.city
 ORDER BY total_shipments DESC;
 
+-- Shipment Status by Store
 SELECT
     s.store_id,
     sh.status,
