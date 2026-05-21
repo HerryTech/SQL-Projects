@@ -22,7 +22,7 @@ This project includes 13 relational tables and a trigger:
 #### Trigger
 A PostgreSQL trigger `trg_update_inventory` automatically updates ingredient stock after every new order.
 
-## 📊 Query Categories
+## Query Categories
 The `queries.sql` file contains analysis and reporting SQL scripts grouped into:
 - Customer Insights 
 - Sales & Revenue
