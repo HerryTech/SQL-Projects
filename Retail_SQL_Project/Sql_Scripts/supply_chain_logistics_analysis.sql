@@ -32,7 +32,7 @@ JOIN retail.order_items oi
 GROUP BY s.supplier_id, s.country
 ORDER BY total_revenue DESC;
 
--- Return by Supplier
+-- Supplier Return Risk
 SELECT
     s.supplier_id,
     COUNT(r.return_id) AS total_returns
