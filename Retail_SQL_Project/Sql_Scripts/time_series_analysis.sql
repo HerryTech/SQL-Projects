@@ -83,3 +83,26 @@ JOIN retail.order_items oi
     ON o.order_id = oi.order_id
 GROUP BY o.order_date
 ORDER BY o.order_date;
+
+WITH monthly_sales AS (
+    SELECT
+        EXTRACT(YEAR FROM o.order_date) AS order_year,
+        EXTRACT(MONTH FROM o.order_date) AS order_month,
+        SUM(oi.qty * oi.price) AS monthly_revenue
+    FROM retail.orders o
+    JOIN retail.order_items oi
+        ON o.order_id = oi.order_id
+    GROUP BY order_year, order_month
+)
+
+SELECT
+    order_year,
+    order_month,
+    monthly_revenue,
+    ROUND(
+        monthly_revenue * 100.0
+        / SUM(monthly_revenue) OVER (),
+        2
+    ) AS revenue_contribution_percentage
+FROM monthly_sales
+ORDER BY order_year, order_month;
