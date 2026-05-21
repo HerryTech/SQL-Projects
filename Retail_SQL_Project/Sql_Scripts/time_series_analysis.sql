@@ -54,3 +54,16 @@ JOIN retail.order_items oi
 JOIN retail.stores s
     ON o.store_id = s.store_id
 GROUP BY s.store_id, s.city;
+
+SELECT
+    c.customer_id,
+    SUM(oi.qty * oi.price) AS total_spent,
+    DENSE_RANK() OVER (
+        ORDER BY SUM(oi.qty * oi.price) DESC
+    ) AS customer_rank
+FROM retail.customers c
+JOIN retail.orders o
+    ON c.customer_id = o.customer_id
+JOIN retail.order_items oi
+    ON o.order_id = oi.order_id
+GROUP BY c.customer_id;
