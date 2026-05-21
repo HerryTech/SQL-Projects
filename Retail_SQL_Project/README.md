@@ -6,19 +6,19 @@ This project analyzes end to end retail operations across multiple business func
 
 The dataset simulates a multi region retail business with transactional and operational data distributed across 12 relational tables.
 
-Business Problem
+## Business Problem
 
 The organization lacked a centralized view of performance across sales, profitability, customer behavior, returns, and supply chain operations. Data was stored in separate systems, making it difficult to:
 
-Track revenue and profitability trends
-Identify high performing and underperforming products
-Monitor customer purchasing behavior
-Understand return patterns and financial leakage
-Evaluate supplier and logistics efficiency
+- Track revenue and profitability trends
+- Identify high performing and underperforming products
+- Monitor customer purchasing behavior
+- Understand return patterns and financial leakage
+- Evaluate supplier and logistics efficiency
 
 This project addresses these gaps through structured SQL analysis.
 
-Project Objectives
+## Project Objectives
 Build a normalized relational database structure
 Perform sales and profitability analysis
 Analyze customer behavior and segmentation
