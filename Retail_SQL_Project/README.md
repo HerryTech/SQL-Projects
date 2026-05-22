@@ -90,9 +90,12 @@ Time Series Analysis
 - Time series analysis
 - Relational modeling
 
-## Key Business Insights (Summary)
-- Certain product categories contribute disproportionately to revenue
-- A small number of customers generate a large share of total revenue
-- Returns significantly impact profitability in specific categories
-- Supplier performance varies in both revenue contribution and return risk
-- Sales exhibit clear time based trends and seasonality patterns
+## Key Business Insights
+- `Cat_5` generated the highest category revenue at approximately `136.7 million`, followed closely by `Cat_3`, `Cat_21`, and `Cat_26`. Revenue distribution across categories remained relatively balanced, reducing dependence on a single category.
+- Product `745` emerged as the top revenue generating product with total sales exceeding `674 thousand`, while products `8248`, `4738`, and `7363` also demonstrated strong sales performance.
+- Several high revenue categories also recorded elevated refund exposure. Cat_11 generated the highest total refund value at approximately 2.78 million, followed closely by Cat_26 and Cat_21.
+Cat_5, despite being the highest revenue generating category, also recorded refund losses exceeding 2.66 million, highlighting the importance of evaluating profitability alongside sales performance.
+Supplier return rates ranged from approximately 3.84% to 5.79%, indicating operational performance variation across suppliers and potential quality inconsistency risks.
+Shipment operations showed near equal distribution across shipment statuses, with over 100 thousand shipments marked as shipped and approximately 99 thousand each classified as delivered and late. The high late shipment volume suggests operational efficiency improvement opportunities.
+Revenue trends remained relatively stable across 2020 to 2023, with recurring revenue peaks observed around July, October, and December, indicating possible seasonal purchasing behavior.
+February consistently recorded lower monthly revenue compared to most periods, while year end months generally produced stronger sales performance.
