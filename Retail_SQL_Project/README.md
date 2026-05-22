@@ -61,13 +61,14 @@ Sales and Profitability
 Customer Analysis
 - Customer segmentation
 - Purchase frequency
-Top customers by revenue
-Customer retention signals
+- Top customers by revenue
+- Customer retention signals
+
 Returns and Risk
-Return rate analysis
-Refund impact evaluation
-High risk products and categories
-Supplier return risk
+- Return rate analysis
+- Refund impact evaluation
+- High risk products and categories
+- Supplier return risk
 Supply Chain and Operations
 Shipment performance
 Supplier performance analysis
