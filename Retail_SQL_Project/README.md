@@ -89,9 +89,10 @@ Time Series Analysis
 - Aggregations and conditional logic
 - Time series analysis
 - Relational modeling
-Key Business Insights (Summary)
-Certain product categories contribute disproportionately to revenue
-A small number of customers generate a large share of total revenue
-Returns significantly impact profitability in specific categories
-Supplier performance varies in both revenue contribution and return risk
-Sales exhibit clear time based trends and seasonality patterns
+
+## Key Business Insights (Summary)
+- Certain product categories contribute disproportionately to revenue
+- A small number of customers generate a large share of total revenue
+- Returns significantly impact profitability in specific categories
+- Supplier performance varies in both revenue contribution and return risk
+- Sales exhibit clear time based trends and seasonality patterns
