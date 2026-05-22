@@ -69,10 +69,12 @@ Returns and Risk
 - Refund impact evaluation
 - High risk products and categories
 - Supplier return risk
+
 Supply Chain and Operations
-Shipment performance
-Supplier performance analysis
-Operational efficiency evaluation
+- Shipment performance
+- Supplier performance analysis
+- Operational efficiency evaluation
+
 Time Series Analysis
 Monthly and yearly revenue trends
 Running totals
