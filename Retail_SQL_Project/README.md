@@ -76,11 +76,12 @@ Supply Chain and Operations
 - Operational efficiency evaluation
 
 Time Series Analysis
-Monthly and yearly revenue trends
-Running totals
-Moving averages
-Growth analysis using window functions
-Key SQL Concepts Used
+- Monthly and yearly revenue trends
+- Running totals
+- Moving averages
+- Growth analysis using window functions
+
+## Key SQL Concepts Used
 JOIN and LEFT JOIN
 GROUP BY and HAVING
 CTEs (Common Table Expressions)
