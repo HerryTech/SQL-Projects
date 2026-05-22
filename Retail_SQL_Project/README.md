@@ -82,13 +82,13 @@ Time Series Analysis
 - Growth analysis using window functions
 
 ## Key SQL Concepts Used
-JOIN and LEFT JOIN
-GROUP BY and HAVING
-CTEs (Common Table Expressions)
-Window functions (LAG, RANK, DENSE_RANK)
-Aggregations and conditional logic
-Time series analysis
-Relational modeling
+- JOIN and LEFT JOIN
+- GROUP BY and HAVING
+- CTEs (Common Table Expressions)
+- Window functions (LAG, RANK, DENSE_RANK)
+- Aggregations and conditional logic
+- Time series analysis
+- Relational modeling
 Key Business Insights (Summary)
 Certain product categories contribute disproportionately to revenue
 A small number of customers generate a large share of total revenue
