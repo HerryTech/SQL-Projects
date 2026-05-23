@@ -98,4 +98,4 @@ Time Series Analysis
 - Supplier return rates ranged from approximately `3.84%` to `5.79%`, indicating operational performance variation across suppliers and potential quality inconsistency risks.
 - Shipment operations showed near equal distribution across shipment statuses, with over `100 thousand` shipments marked as shipped and approximately `99 thousand` each classified as delivered and late. The high late shipment volume suggests operational efficiency improvement opportunities.
 - Revenue trends remained relatively stable across `2020` to `2023`, with recurring revenue peaks observed around `July`, `October`, and `December`, indicating possible seasonal purchasing behavior.
-- February consistently recorded lower monthly revenue compared to most periods, while year end months generally produced stronger sales performance.
+- February consistently recorded lower monthly revenue compared to most periods, while year end months generally produced stronger sales performance...
