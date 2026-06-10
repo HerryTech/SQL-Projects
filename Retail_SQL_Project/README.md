@@ -1,7 +1,7 @@
 # Retail Operations and Supply Chain Analytics
 
 ## Project Overview
-
+g
 This project analyzes end to end retail operations across multiple business functions including sales, customers, products, returns, shipping, payments, and supplier performance. The goal is to build a unified analytical system that supports executive decision making through structured SQL analysis and data modeling.
 
 The dataset simulates a multi region retail business with transactional and operational data distributed across 12 relational tables.
