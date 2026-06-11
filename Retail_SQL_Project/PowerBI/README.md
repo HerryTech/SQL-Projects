@@ -125,3 +125,5 @@ The dashboard includes advanced DAX measures such as:
 * DAX
 * Data Modeling
 * GitHub
+
+_Project in progress_
