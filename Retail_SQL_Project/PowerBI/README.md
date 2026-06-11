@@ -14,8 +14,6 @@ Nova Retail Group operates across multiple markets and sales channels, generatin
 
 The objective of this project was to transform raw operational data into actionable business intelligence through data modeling, DAX calculations, and interactive visual reporting.
 
----
-
 ## Project Workflow
 
 ### Phase 1: SQL Analytics
