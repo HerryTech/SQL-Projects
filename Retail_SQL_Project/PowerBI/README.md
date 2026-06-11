@@ -90,8 +90,6 @@ Monitors shipment performance, delivery outcomes, and operational efficiency.
 
 Assesses supplier contribution, return rates, risk exposure, and supplier effectiveness.
 
----
-
 ## Key Metrics
 
 The dashboard includes advanced DAX measures such as:
@@ -109,8 +107,6 @@ The dashboard includes advanced DAX measures such as:
 * Previous Year Sales
 * YoY Growth %
 * Rolling 12 Month Sales
-
----
 
 ## Key Insights
 
