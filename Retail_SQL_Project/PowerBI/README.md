@@ -24,9 +24,8 @@ The project started in PostgreSQL where the following activities were completed:
 * Data validation and quality checks
 * Sales and profitability analysis
 * Customer behavior analysis
-* Returns and refund analysis
+* Returns and risk analysis
 * Supply chain and logistics analysis
-* Supplier performance analysis
 * Time series and trend analysis
 * Executive insight reporting
 
@@ -42,8 +41,6 @@ The cleaned and validated data model was imported into Power BI where the follow
 * KPI development
 * Interactive dashboard creation
 * Executive reporting design
-
----
 
 ## Data Model
 
