@@ -70,13 +70,13 @@ The dashboard follows a star schema architecture consisting of:
 
 ![Executive Overview](./Images/Executive%20Dashboard.png)
 
-Provides a high level view of company performance through revenue, orders, customers, returns, and growth trends.
+Executive overview provides a high level view of company performance through revenue, orders, customers, returns, and growth trends.
 
 ### Sales & Profitability Analysis
 
 ![Sales Dashboard](./Images/Sales%20Dashboard.png)
 
-Analyzes revenue drivers, product performance, category contribution, and sales growth.
+This analyzes revenue drivers, product performance, category contribution, and sales growth.
 
 ### Customer Analysis
 
