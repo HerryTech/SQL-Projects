@@ -28,7 +28,7 @@ This project demonstrates key SQL skills by setting up a retail sales database, 
 **Folder:** [retail_sales_analysis](./retail_sales_analysis/)
 
 ### 5. **Retail SQL Project**
-This project combines PostgreSQL and Power BI to deliver an end to end retail analytics solution. Using SQL, I analyzed sales performance, customer behavior, returns, supplier risk, shipment operations, and revenue trends across a 12 table relational database. The data was then modeled in Power BI using a star schema, DAX measures, and interactive dashboards to provide insights into business performance, operational efficiency, and decision making.
+This project combines PostgreSQL and Power BI to deliver an end to end retail analytics solution. Using SQL, sales performance, customer behavior, returns, supplier risk, shipment operations, and revenue trends were analyzed across a 12 table relational database. The data was then modeled in Power BI using a star schema, DAX measures, and interactive dashboards to provide insights into business performance, operational efficiency, and decision making.
 
 **Folder:** [Retail_SQL_Project](./Retail_SQL_Project/)
 
