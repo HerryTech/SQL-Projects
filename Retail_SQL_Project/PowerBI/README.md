@@ -8,8 +8,6 @@ The project began with a PostgreSQL based analytics initiative where data from m
 
 The dashboard consolidates sales, customer, returns, supplier, and operational data into a centralized reporting solution that enables stakeholders to monitor business performance, identify risk areas, and uncover growth opportunities.
 
----
-
 ## Business Problem
 
 Global Retail Corporation operates across multiple markets and sales channels, generating large volumes of transactional and operational data. Leadership lacked a centralized reporting platform capable of providing visibility into revenue performance, customer behavior, returns, supplier effectiveness, and shipment operations.
