@@ -1,8 +1,8 @@
-# Retail Performance & Operations Intelligence Dashboard
+# Retail Operations and Supply Chain Intelligence Dashboard
 
 ## Project Overview
 
-This project is the Power BI phase of a complete end to end Business Intelligence solution developed for Global Retail Corporation.
+This project is the Power BI phase of a complete end to end Business Intelligence solution developed for Nova Retail Group.
 
 The project began with a PostgreSQL based analytics initiative where data from multiple operational systems was imported, modeled, validated, and analyzed using SQL. After completing the database analysis and generating business insights, the data was connected to Power BI to build an interactive executive dashboard for ongoing performance monitoring and decision making.
 
