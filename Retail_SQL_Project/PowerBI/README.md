@@ -50,6 +50,7 @@ The dashboard follows a star schema architecture consisting of:
 
 * Fact_Orders
 * Fact_OrderItems
+* Fact_Payments
 * Fact_Returns
 * Fact_Shipments
 
@@ -62,8 +63,6 @@ The dashboard follows a star schema architecture consisting of:
 * Dim_Stores
 * Dim_Suppliers
 * Dim_Promotions
-
----
 
 ## Dashboard Pages
 
