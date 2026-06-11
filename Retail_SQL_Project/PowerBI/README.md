@@ -84,6 +84,9 @@ Examines customer acquisition, purchasing behavior, customer value, and geograph
 
 ### Returns & Risk Analysis
 
+
+![Returns Dashboard](./Images/Returns%20Dashboard.png)
+
 Evaluates refund trends, return rates, category level risks, and financial impact of returns.
 
 ### Operations & Logistics Analysis
