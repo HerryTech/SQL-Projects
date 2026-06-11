@@ -1,6 +1,4 @@
-Since this is content you will publish on GitHub, I'll give it in a reusable README format.
-
-# Global Retail Performance & Operations Intelligence Dashboard
+# Retail Performance & Operations Intelligence Dashboard
 
 ## Project Overview
 
@@ -155,11 +153,3 @@ The dashboard includes advanced DAX measures such as:
 * Project README Documentation
 
 ---
-
-## Author
-
-**Blessing Ilesanmi**
-
-Business Intelligence and Data Analytics Project
-
-This README clearly shows that the Power BI dashboard was not a standalone visualization exercise but the second phase of a complete SQL to Power BI business intelligence solution, which is much stronger for recruiters and hiring managers.
