@@ -44,6 +44,8 @@ The database follows a relational model with 12 tables:
 - shipments
 - returns
 
+![Entity Relationship Diagram](./Images/ERD.png)
+
 The model is structured using primary and foreign key relationships with order_items and orders serving as core transactional tables.
 
 ## Tools Used
