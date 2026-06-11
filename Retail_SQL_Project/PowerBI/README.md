@@ -10,7 +10,7 @@ The dashboard consolidates sales, customer, returns, supplier, and operational d
 
 ## Business Problem
 
-Global Retail Corporation operates across multiple markets and sales channels, generating large volumes of transactional and operational data. Leadership lacked a centralized reporting platform capable of providing visibility into revenue performance, customer behavior, returns, supplier effectiveness, and shipment operations.
+Nova Retail Group operates across multiple markets and sales channels, generating large volumes of transactional and operational data. Leadership lacked a centralized reporting platform capable of providing visibility into revenue performance, customer behavior, returns, supplier effectiveness, and shipment operations.
 
 The objective of this project was to transform raw operational data into actionable business intelligence through data modeling, DAX calculations, and interactive visual reporting.
 
