@@ -116,8 +116,6 @@ The dashboard includes advanced DAX measures such as:
 * Shipment volumes were distributed relatively evenly across Delivered, Shipped, and Late statuses, highlighting opportunities for operational improvement.
 * Revenue remained relatively stable across the analysis period with recurring seasonal peaks and troughs.
 
----
-
 ## Tools & Technologies
 
 * PostgreSQL
@@ -127,17 +125,3 @@ The dashboard includes advanced DAX measures such as:
 * DAX
 * Data Modeling
 * GitHub
-
----
-
-## Deliverables
-
-* PostgreSQL Analytics Solution
-* Power BI Dashboard
-* Data Model Documentation
-* Stakeholder Requirements Document
-* Technical Specification Document
-* Executive Insights Report
-* Project README Documentation
-
----
